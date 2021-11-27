@@ -48,10 +48,13 @@ public class Login_fxml extends Application {
         
        PerspectiveCamera camera = new PerspectiveCamera(true);
         
-        scene.setCamera(camera);
+        //scene.setCamera(camera);
         stage.setScene(scene);
+        scene.setFill(Color.web("#324ea8"));
+        stage.setWidth(1000);
+        stage.setHeight(500);
         stage.show();
-        camera.translateZProperty().set(-900);
+        /**camera.translateZProperty().set(-900);
         camera.setNearClip(0.1);
         camera.setFarClip(2000);
         camera.setLayoutX(250);
@@ -60,7 +63,7 @@ public class Login_fxml extends Application {
         camera.setRotationAxis(Rotate.Y_AXIS);
         camera.setRotate(10.0);
         camera.setRotationAxis(Rotate.X_AXIS);
-        camera.setRotate(-25.0);
+        camera.setRotate(-25.0);**/
         //Rotate r = new Rotate(10,Rotate.Y_AXIS); 
         //camera.getTransforms().add(r);
         //r = new Rotate(-25,Rotate.X_AXIS);

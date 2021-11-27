@@ -67,7 +67,7 @@ public class FXMLDocumentController implements Initializable {
         Image net = netMeth.generateNet("1", "2", "3", "4", "5", "6");
         PhongMaterial material = new PhongMaterial();
         material.setDiffuseMap(net);
-        
+        int gap = 130;
         
         int x = 0;
         int y = 0;
@@ -77,7 +77,8 @@ public class FXMLDocumentController implements Initializable {
                 box[i][j]= new box(100f, 100f, 100f);
                 box[i][j].setLayoutX(x);
                 box[i][j].setLayoutY(y);
-                x = x + 150;
+                
+                x = x + gap;
                 
                 box[i][j].setMaterial(material);
                 group.getChildren().add(box[i][j]);
@@ -101,9 +102,15 @@ public class FXMLDocumentController implements Initializable {
                 }));
             }
             x = 0;
-            y = y + 150;
+            y = y + gap;
+        }
+        for (int i = 2; i>=0; i--){
+            for (int j = 2; j>=0; j--){
+                box[i][j].toFront();
+            }
         }
         Button button = new Button();
+        //button.setLayoutX(-200);
         button.setOnMouseClicked((new EventHandler<MouseEvent>() { 
                     public void handle(MouseEvent event) { 
                         for (int i = 0; i<3; i++){
@@ -117,8 +124,14 @@ public class FXMLDocumentController implements Initializable {
         }));
         anchorPane.getChildren().add(button);
         anchorPane2.getChildren().add(group);
-        group.setRotationAxis(Rotate.Y_AXIS);
+        group.setRotationAxis(Rotate.X_AXIS);
         //group.setRotate(20.0);
+        group.setRotationAxis(Rotate.Y_AXIS);
+       // group.setRotate(50.0);
+        Rotate r = new Rotate(-10,150,150,150,Rotate.Y_AXIS);
+        group.getTransforms().add(r);
+        r = new Rotate(25,150,150,150,Rotate.X_AXIS);
+        group.getTransforms().add(r);
         
         
         /*RotateTransition rt = new RotateTransition(Duration.millis(3000), group);
