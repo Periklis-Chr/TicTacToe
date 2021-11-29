@@ -63,22 +63,46 @@ public class FXMLDocumentController implements Initializable {
     @Override
     
     public void initialize(URL url, ResourceBundle rb) {
-        netMethod netMeth = new netMethod();
-        Image net = netMeth.generateNet("1", "2", "3", "4", "5", "6");
-        PhongMaterial material = new PhongMaterial();
-        material.setDiffuseMap(net);
-        int gap = 130;
+        int gap = 60;
+        int startx = 0;
+        int starty = 0;
+        float x = 100f;
         
-        int x = 0;
-        int y = 0;
+        qubes(gap,startx,starty,x);
+        
+        Button button = new Button();
+        //button.setLayoutX(-200);
+        button.setOnMouseClicked((new EventHandler<MouseEvent>() { 
+                    public void handle(MouseEvent event) { 
+                        for (int i = 0; i<3; i++){
+                            for (int j = 0; j<3; j++){
+                                System.out.print(box[i][j].getState());
+                            }
+                            System.out.println();
+                        }
+                        System.out.println();
+                    } 
+        }));
+        anchorPane.getChildren().add(button);
+        
+
+    
+    }
+    private void qubes(int gap,int startx,int starty, float size){
+        boxes(gap,startx,starty,size,size,size);
+    }
+    private void boxes(int gap,int startx,int starty, float x,float y, float z){
+        netMaterial material = new netMaterial();
+        
+        
         Group group = new Group();
         for (int i = 0; i<3; i++){
             for (int j = 0; j<3; j++){
-                box[i][j]= new box(100f, 100f, 100f);
-                box[i][j].setLayoutX(x);
-                box[i][j].setLayoutY(y);
+                box[i][j]= new box(x, y, z);
+                box[i][j].setLayoutX(startx);
+                box[i][j].setLayoutY(starty);
                 
-                x = x + gap;
+                startx = startx + (int)x + gap;
                 
                 box[i][j].setMaterial(material);
                 group.getChildren().add(box[i][j]);
@@ -101,28 +125,14 @@ public class FXMLDocumentController implements Initializable {
                     } 
                 }));
             }
-            x = 0;
-            y = y + gap;
+            startx = 0;
+            starty = starty + (int)y + gap;
         }
         for (int i = 2; i>=0; i--){
             for (int j = 2; j>=0; j--){
                 box[i][j].toFront();
             }
         }
-        Button button = new Button();
-        //button.setLayoutX(-200);
-        button.setOnMouseClicked((new EventHandler<MouseEvent>() { 
-                    public void handle(MouseEvent event) { 
-                        for (int i = 0; i<3; i++){
-                            for (int j = 0; j<3; j++){
-                                System.out.print(box[i][j].getState());
-                            }
-                            System.out.println();
-                        }
-                        System.out.println();
-                    } 
-        }));
-        anchorPane.getChildren().add(button);
         anchorPane2.getChildren().add(group);
         group.setRotationAxis(Rotate.X_AXIS);
         //group.setRotate(20.0);
@@ -133,19 +143,8 @@ public class FXMLDocumentController implements Initializable {
         r = new Rotate(25,150,150,150,Rotate.X_AXIS);
         group.getTransforms().add(r);
         
-        
-        /*RotateTransition rt = new RotateTransition(Duration.millis(3000), group);
-                rt.setAxis(Rotate.Y_AXIS);
-                rt.setByAngle(360);
-                rt.setCycleCount(200);
-                rt.setAutoReverse(true);
-
-                rt.play();*/
-        //r = new Rotate(50,50,50,50,Rotate.Z_AXIS);
-        //anchorPane2.getTransforms().add(r);
-        
-    
     }
+    
         
     
 }

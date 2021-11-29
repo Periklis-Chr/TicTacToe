@@ -5,6 +5,7 @@
  */
 package login_fxml;
 
+import com.sun.javafx.sg.prism.NGPhongMaterial;
 import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -13,12 +14,18 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
+import javafx.scene.paint.Material;
+import javafx.scene.paint.PhongMaterial;
 
 /**
  *
  * @author User
  */
-public class netMethod {
+public class netMaterial extends PhongMaterial {
+    Image net = generateNet("1", "2", "3", "4", "5", "6");
+    netMaterial(){
+        super.setDiffuseMap(net);
+    }
     public Image generateNet(String face1, String face2, String face3, String face4, String face5, String face6) {
 
     GridPane grid = new GridPane();
@@ -77,5 +84,8 @@ public class netMethod {
 
     return grid.snapshot(null, null);
 }
+
+
+    
     
 }
