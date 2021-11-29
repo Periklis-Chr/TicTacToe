@@ -24,6 +24,7 @@ import javafx.scene.layout.VBox;
  */
 public class FXMLDocumentController implements Initializable {
     
+    BoxQ boxes[][] = new BoxQ[3][3];
     
     @FXML
     private Label label;
@@ -56,12 +57,14 @@ public class FXMLDocumentController implements Initializable {
         int starty = 0;
         float x = 100f;
         
-       // Boxes boxes = new Boxes(gap,startx,starty,x);
-        
+       
+        //create 
         MatrixBoxes matrix = new MatrixBoxes(gap,startx,starty,x);
         Group group = matrix.getGroup();
         anchorPane2.getChildren().add(group);
-        BoxQ boxes[][] =  matrix.getBoxes();
+        
+        boxes =  matrix.getBoxes();
+        
         
         Button button = new Button();
         button.setOnMouseClicked((new EventHandler<MouseEvent>() { 

@@ -12,15 +12,15 @@ import org.fxyz3d.shapes.primitives.CuboidMesh;
  * @author User
  */
 public class BoxQ extends CuboidMesh{
-    private int state = 5;
+    private String state = " ";
     
     BoxQ(float w,float h,float d){
         super(w, h, d);
     }
-    public void setState(int s){
+    public void setState(String s){
         state= s;
     }
-    public int getState(){
+    public String getState(){
         return state;
     }
 }

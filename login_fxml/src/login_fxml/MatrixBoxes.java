@@ -70,15 +70,21 @@ public class MatrixBoxes {
                 BoxQ boxS = boxes[i][j];
                 boxes[i][j].setOnMouseClicked((new EventHandler<MouseEvent>() { 
                     public void handle(MouseEvent event) { 
-                    rt.setAxis(Rotate.Y_AXIS);
-                    rt.setByAngle(180);
-                    rt.setAutoReverse(true);
-                    rt.play();
-                    if(boxS.getState() == 5){
-                        boxS.setState(3);
+                    
+                    if(boxS.getState().equals(" ") && turn.turn.equals("X")){
+                        boxS.setState("X");
+                        rt.setAxis(Rotate.X_AXIS);
+                        rt.setByAngle(90);
+                        rt.play();
+                        turn.turn = "O";
                     }
-                    else{
-                        boxS.setState(5);
+                    else if(boxS.getState().equals(" ") && turn.turn.equals("O")){
+                        boxS.setState("O");
+                        rt.setAxis(Rotate.X_AXIS);
+                        rt.setByAngle(90);
+                        rt.setByAngle(-90);
+                        rt.play();
+                        turn.turn = "X";
                     }
                     System.out.println(boxS.getState());
                     System.out.println();
