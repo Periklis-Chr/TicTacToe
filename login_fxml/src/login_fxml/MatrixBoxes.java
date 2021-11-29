@@ -74,6 +74,7 @@ public class MatrixBoxes {
                     public void handle(MouseEvent event) {
                         move.doMove(boxS,boxes);
                         
+                        
                     
                     } 
                 }));

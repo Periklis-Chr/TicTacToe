@@ -15,6 +15,7 @@ import javafx.animation.SequentialTransition;
 public class Info {
     public static String turn = "X";
     public static String won;
-    public SequentialTransition s = new SequentialTransition();
+    public static int scoreX = 0;
+    public static int scoreO = 0;
     
 }

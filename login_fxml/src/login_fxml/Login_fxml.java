@@ -16,6 +16,7 @@ import javafx.stage.Stage;
  * @author asus
  */
 public class Login_fxml extends Application {
+    public static Scene scene;
     private final double W = 600, H = 450;
     private final double M = 50;
     private final double R = -8;
@@ -38,7 +39,7 @@ public class Login_fxml extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         //Scene scene = new Scene(root);
-        Scene scene = new Scene(root, W + M*2, H + M*2, false, SceneAntialiasing.BALANCED);
+        scene = new Scene(root, W + M*2, H + M*2, false, SceneAntialiasing.BALANCED);
         stage.setScene(scene);
         scene.setFill(Color.web("#324ea8"));
         stage.setWidth(1500);
