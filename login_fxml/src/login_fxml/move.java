@@ -18,11 +18,13 @@ import javafx.util.Duration;
  */
 public class move {
     static SequentialTransition seq;
+    static RotateTransition rtS;
     public static void doMove(BoxQ boxS,BoxQ[][] boxes){
         RotateTransition rt = new RotateTransition(Duration.millis(1000), boxS);
-
+        rtS = rt;
         try {
-            if(seq.getStatus().equals(Status.RUNNING)){
+            System.out.println(rtS.getStatus());
+            if(seq.getStatus().equals(Status.RUNNING)|| rtS.getStatus().equals((Status.RUNNING))){
                 return;
             }
 
@@ -100,10 +102,12 @@ public class move {
         boolean X1 = boxes[0][0].getState().equals(boxes[1][1].getState()) && boxes[0][0].getState().equals(boxes[2][2].getState()) && !boxes[0][0].getState().equals(" ");
         boolean X2 = boxes[0][2].getState().equals(boxes[1][1].getState()) && boxes[0][2].getState().equals(boxes[2][0].getState()) && !boxes[0][2].getState().equals(" ");
         for (int i = 0; i<3; i++){
-            boolean row = boxes[i][0].getState().equals(boxes[i][1].getState()) && boxes[i][0].getState().equals(boxes[i][2].getState()) && !boxes[i][0].getState().equals(" ");
-            boolean collumn = boxes[0][i].getState().equals(boxes[1][i].getState()) && boxes[i][0].getState().equals(boxes[2][i].getState()) && !boxes[0][i].getState().equals(" ");
+            boolean row = 
+                boxes[i][0].getState().equals(boxes[i][1].getState()) && boxes[i][0].getState().equals(boxes[i][2].getState()) && !boxes[i][0].getState().equals(" ");
+            boolean collumn = 
+                boxes[0][i].getState().equals(boxes[1][i].getState()) && boxes[0][i].getState().equals(boxes[2][i].getState()) && !boxes[0][i].getState().equals(" ");
             
-            if(row || collumn || X1 || X2){
+            if(X1 || X2 || row || collumn){
                 
                 if(boxes[i][0].getState().equals("X")){
                     System.out.println("X won");
