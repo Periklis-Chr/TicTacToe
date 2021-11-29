@@ -6,6 +6,7 @@
 package login_fxml;
 
 import java.io.FileNotFoundException;
+import javafx.animation.Animation.Status;
 import javafx.animation.RotateTransition;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
@@ -70,8 +71,7 @@ public class MatrixBoxes {
                 group.getChildren().add(boxes[i][j]);
                 BoxQ boxS = boxes[i][j];
                 boxes[i][j].setOnMouseClicked((new EventHandler<MouseEvent>() { 
-                    public void handle(MouseEvent event) { 
-                        
+                    public void handle(MouseEvent event) {
                         move.doMove(boxS,boxes);
                         
                     

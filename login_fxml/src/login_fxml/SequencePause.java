@@ -9,7 +9,6 @@ package login_fxml;
  *
  * @author User
  */
-public class win {
-    
+public class SequencePause {
     
 }

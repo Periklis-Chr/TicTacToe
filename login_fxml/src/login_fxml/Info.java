@@ -5,6 +5,9 @@
  */
 package login_fxml;
 
+import javafx.animation.Animation.Status;
+import javafx.animation.SequentialTransition;
+
 /**
  *
  * @author User
@@ -12,6 +15,6 @@ package login_fxml;
 public class Info {
     public static String turn = "X";
     public static String won;
-    public static boolean end = false;
+    public SequentialTransition s = new SequentialTransition();
     
 }
