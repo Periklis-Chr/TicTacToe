@@ -11,10 +11,10 @@ import org.fxyz3d.shapes.primitives.CuboidMesh;
  *
  * @author User
  */
-public class box extends CuboidMesh{
+public class BoxQ extends CuboidMesh{
     private int state = 5;
     
-    box(float w,float h,float d){
+    BoxQ(float w,float h,float d){
         super(w, h, d);
     }
     public void setState(int s){
