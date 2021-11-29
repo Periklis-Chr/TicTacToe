@@ -55,9 +55,6 @@ public class move {
                 Info.turn = "X";
             }
         }
-        
-        //System.out.println(boxS.getState());
-       // System.out.println();
     }
     public static void endGame(BoxQ boxes[][],BoxQ boxS){
         RotateTransition rtB = new RotateTransition(Duration.millis(1000), boxS);
@@ -68,12 +65,6 @@ public class move {
         else{
             rtB.setByAngle(-90);
         }
-        
-//        RotateTransition rtBE = new RotateTransition(Duration.millis(1000), boxS);
-//        
-//        boxS.setState(" ");
-//        rtBE.setAxis(Rotate.X_AXIS);
-//        rtBE.setByAngle(-90);
         ParallelTransition p = new ParallelTransition();
 
         SequentialTransition s = new SequentialTransition(rtB,p);
