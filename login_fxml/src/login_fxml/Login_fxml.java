@@ -35,8 +35,8 @@ public class Login_fxml extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         scene.setFill(Color.web("#324ea8"));
-        stage.setWidth(1000);
-        stage.setHeight(500);
+        stage.setWidth(1500);
+        stage.setHeight(900);
         stage.show();
     }
     

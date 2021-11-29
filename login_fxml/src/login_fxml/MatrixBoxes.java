@@ -5,6 +5,7 @@
  */
 package login_fxml;
 
+import java.io.FileNotFoundException;
 import javafx.animation.RotateTransition;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
@@ -25,7 +26,7 @@ public class MatrixBoxes {
     private float x;
     private float y;
     private float z;
-    MatrixBoxes(int g,int sx,int sy,float x){
+    MatrixBoxes(int g,int sx,int sy,float x) throws FileNotFoundException{
         gap = g;
         startx = sx;
         starty = sy;
@@ -36,7 +37,7 @@ public class MatrixBoxes {
         
     }
     
-    MatrixBoxes(int g,int sx,int sy,float x,float y,float z){
+    MatrixBoxes(int g,int sx,int sy,float x,float y,float z) throws FileNotFoundException{
         gap = g;
         startx = sx;
         starty = sy;
@@ -54,8 +55,9 @@ public class MatrixBoxes {
         return boxes;
     }
     
-    public void Boxes(){
-        netMaterial material = new netMaterial();
+    public void Boxes() throws FileNotFoundException{
+        Texture material = new Texture("box.png");
+//        Texture material = new Texture("DFv8z.png");
         for (int i = 0; i<3; i++){
             for (int j = 0; j<3; j++){
                 boxes[i][j]= new BoxQ(x, y, z);

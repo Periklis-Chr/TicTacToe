@@ -5,7 +5,8 @@
  */
 package login_fxml;
 
-import com.sun.javafx.sg.prism.NGPhongMaterial;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -14,18 +15,26 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
-import javafx.scene.paint.Material;
 import javafx.scene.paint.PhongMaterial;
 
 /**
  *
  * @author User
  */
-public class netMaterial extends PhongMaterial {
-    Image net = generateNet("X", " ", " ", " ", " ", "O");
-    netMaterial(){
-        super.setDiffuseMap(net);
+//"X", " ", " ", " ", " ", "O"
+public class Texture extends PhongMaterial{
+    FileInputStream file;
+    Image textureSet;
+    Texture(String file) throws FileNotFoundException{
+        textureSet = new Image(new FileInputStream("src/resources/"+ file));
+        Texture.this.setDiffuseMap(this.textureSet);
     }
+    Texture(String face1, String face2, String face3, String face4, String face5, String face6){
+        textureSet = generateNet(face1, face2, face3, face4, face5, face6);
+        Texture.this.setDiffuseMap(this.textureSet);
+    }
+    
+    
     public Image generateNet(String face1, String face2, String face3, String face4, String face5, String face6) {
 
     GridPane grid = new GridPane();
@@ -84,8 +93,5 @@ public class netMaterial extends PhongMaterial {
 
     return grid.snapshot(null, null);
 }
-
-
-    
     
 }

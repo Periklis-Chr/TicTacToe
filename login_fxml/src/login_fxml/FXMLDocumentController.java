@@ -4,8 +4,11 @@
  */
 package login_fxml;
 
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -52,18 +55,25 @@ public class FXMLDocumentController implements Initializable {
     @Override
     
     public void initialize(URL url, ResourceBundle rb) {
-        int gap = 30;
+        int gap = 60;
         int startx = 0;
         int starty = 0;
-        float x = 100f;
+        float x = 200f;
         
        
         //create 
-        MatrixBoxes matrix = new MatrixBoxes(gap,startx,starty,x);
-        Group group = matrix.getGroup();
-        anchorPane2.getChildren().add(group);
+        MatrixBoxes matrix;
+        try {
+            matrix = new MatrixBoxes(gap,startx,starty,x);
+            Group group = matrix.getGroup();
+            anchorPane2.getChildren().add(group);
+            boxes =  matrix.getBoxes();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
-        boxes =  matrix.getBoxes();
+        
+        
         
         
         Button button = new Button();
