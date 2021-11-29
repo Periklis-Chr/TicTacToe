@@ -68,28 +68,13 @@ public class MatrixBoxes {
                 
                 boxes[i][j].setMaterial(material);
                 group.getChildren().add(boxes[i][j]);
-                RotateTransition rt = new RotateTransition(Duration.millis(1000), boxes[i][j]);
                 BoxQ boxS = boxes[i][j];
                 boxes[i][j].setOnMouseClicked((new EventHandler<MouseEvent>() { 
                     public void handle(MouseEvent event) { 
+                        
+                        move.doMove(boxS,boxes);
+                        
                     
-                    if(boxS.getState().equals(" ") && turn.turn.equals("X")){
-                        boxS.setState("X");
-                        rt.setAxis(Rotate.X_AXIS);
-                        rt.setByAngle(90);
-                        rt.play();
-                        turn.turn = "O";
-                    }
-                    else if(boxS.getState().equals(" ") && turn.turn.equals("O")){
-                        boxS.setState("O");
-                        rt.setAxis(Rotate.X_AXIS);
-                        rt.setByAngle(90);
-                        rt.setByAngle(-90);
-                        rt.play();
-                        turn.turn = "X";
-                    }
-                    System.out.println(boxS.getState());
-                    System.out.println();
                     } 
                 }));
             }
@@ -110,4 +95,5 @@ public class MatrixBoxes {
         r = new Rotate(25,150,150,150,Rotate.X_AXIS);
         group.getTransforms().add(r);
     }
+    
 }

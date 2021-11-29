@@ -9,7 +9,7 @@ package login_fxml;
  *
  * @author User
  */
-public class turn {
-    public static String turn = "X";
+public class win {
+    
     
 }

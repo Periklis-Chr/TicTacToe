@@ -23,7 +23,6 @@ import javafx.scene.paint.PhongMaterial;
  */
 //"X", " ", " ", " ", " ", "O"
 public class Texture extends PhongMaterial{
-    FileInputStream file;
     Image textureSet;
     Texture(String file) throws FileNotFoundException{
         textureSet = new Image(new FileInputStream("src/resources/"+ file));

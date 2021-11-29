@@ -8,6 +8,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.SceneAntialiasing;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 /**
@@ -15,7 +16,9 @@ import javafx.stage.Stage;
  * @author asus
  */
 public class Login_fxml extends Application {
-    
+    private final double W = 600, H = 450;
+    private final double M = 50;
+    private final double R = -8;
     
     @Override
     public void start(Stage stage) throws Exception {
@@ -31,8 +34,11 @@ public class Login_fxml extends Application {
     }
     
     public void stage(Stage stage) throws Exception{
+        
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        Scene scene = new Scene(root);
+        
+        //Scene scene = new Scene(root);
+        Scene scene = new Scene(root, W + M*2, H + M*2, false, SceneAntialiasing.BALANCED);
         stage.setScene(scene);
         scene.setFill(Color.web("#324ea8"));
         stage.setWidth(1500);
