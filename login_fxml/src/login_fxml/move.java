@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.text.Text;
 import javafx.scene.transform.Rotate;
 import javafx.util.Duration;
+import static login_fxml.Login_fxml.stageS;
 
 /**
  *
@@ -111,41 +112,13 @@ public class move {
             boolean collumn = 
                 boxes[0][i].getState().equals(boxes[1][i].getState()) && boxes[0][i].getState().equals(boxes[2][i].getState()) && !boxes[0][i].getState().equals(" ");
             
-            
             if(row){
-                
-                if(boxes[i][0].getState().equals("X")){
-                    System.out.println("X won");
-                    Info.scoreX++;
-                    Info.won = "X";
-                    Info.turn = "O";
-                    
-                }
-                else if(boxes[i][0].getState().equals("O")){
-                    System.out.println("O won");
-                    Info.scoreO++;
-                    Info.won = "O";
-                    Info.turn = "X";
-                }
- 
+                playerWon(boxes[i][0].getState());
                 return true;
             
             }
-            if(collumn){
-                
-                if(boxes[0][i].getState().equals("X")){
-                    System.out.println("X won");
-                    Info.scoreX++;
-                    Info.won = "X";
-                    Info.turn = "O";
-                    
-                }
-                else if(boxes[0][i].getState().equals("O")){
-                    System.out.println("O won");
-                    Info.scoreO++;
-                    Info.won = "O";
-                    Info.turn = "X";
-                }
+            else if(collumn){
+                playerWon(boxes[0][i].getState());
                 return true;
                 
             }
@@ -154,37 +127,11 @@ public class move {
         }
         
         if(X1){
-                if(boxes[0][0].getState().equals("X")){
-                    System.out.println("X won");
-                    Info.scoreX++;
-                    Info.won = "X";
-                    Info.turn = "O";
-                    
-                }
-                else if(boxes[0][0].getState().equals("O")){
-                    System.out.println("O won");
-                    Info.scoreO++;
-                    Info.won = "O";
-                    Info.turn = "X";
-                }
+                playerWon(boxes[0][0].getState());
                 return true;
-                
-        }
-        
-        if(X2){
-                if(boxes[0][2].getState().equals("X")){
-                    System.out.println("X won");
-                    Info.scoreX++;
-                    Info.won = "X";
-                    Info.turn = "O";
-                    
-                }
-                else if(boxes[0][2].getState().equals("O")){
-                    System.out.println("O won");
-                    Info.scoreO++;
-                    Info.won = "O";
-                    Info.turn = "X";
-                }
+        }    
+        else if(X2){
+                playerWon(boxes[0][2].getState());
                 return true;
                 
         }
@@ -205,9 +152,25 @@ public class move {
 
     }
     public static void score(){
-        Text scoreX = (Text) Login_fxml.scene.lookup("#XScore");
+        Scene scene = stageS.getScene();
+        Text scoreX = (Text) scene.lookup("#XScore");
         scoreX.setText(String.valueOf(Info.scoreX));
-        Text scoreO = (Text) Login_fxml.scene.lookup("#OScore");
+        Text scoreO = (Text) scene.lookup("#OScore");
         scoreO.setText(String.valueOf(Info.scoreO));
+    }
+    public static void playerWon(String Won){
+        if(Won.equals("X")){
+            System.out.println("X won");
+            Info.scoreX++;
+            Info.won = "X";
+            Info.turn = "O";
+                    
+        }
+        else if(Won.equals("O")){
+            System.out.println("O won");
+            Info.scoreO++;
+            Info.won = "O";
+            Info.turn = "X";
+        }
     }
 }

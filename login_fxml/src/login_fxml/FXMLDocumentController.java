@@ -5,6 +5,7 @@
 package login_fxml;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -12,14 +13,18 @@ import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.StageStyle;
+import static login_fxml.Login_fxml.stageS;
 
 /**
  *
@@ -55,40 +60,56 @@ public class FXMLDocumentController implements Initializable {
     @Override
     
     public void initialize(URL url, ResourceBundle rb) {
-        int gap = 60;
-        int startx = 0;
-        int starty = 0;
-        float x = 200f;
-        
-       
-        //create 
-        MatrixBoxes matrix;
         try {
-            matrix = new MatrixBoxes(gap,startx,starty,x);
-            Group group = matrix.getGroup();
-            anchorPane2.getChildren().add(group);
-            boxes =  matrix.getBoxes();
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        
-        
-        
-        
-        Button button = new Button();
-        button.setOnMouseClicked((new EventHandler<MouseEvent>() { 
-                    public void handle(MouseEvent event) { 
-                        for (int i = 0; i<3; i++){
-                            for (int j = 0; j<3; j++){
-                                System.out.print(boxes[i][j].getState());
-                            }
-                            System.out.println();
+            int gap = 60;
+            int startx = 0;
+            int starty = 0;
+            float x = 200f;
+            
+            
+            //create
+            MatrixBoxes matrix;
+            try {
+                matrix = new MatrixBoxes(gap,startx,starty,x);
+                Group group = matrix.getGroup();
+                anchorPane2.getChildren().add(group);
+                boxes =  matrix.getBoxes();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            
+            
+            
+            
+            rootCreate root = new rootCreate("FXMLDocument2.fxml");
+            ScenesSet Scene1 = new ScenesSet(root.getRoot());
+            
+            Button button = new Button();
+            button.setOnMouseClicked((new EventHandler<MouseEvent>() {
+                public void handle(MouseEvent event) {
+                    for (int i = 0; i<3; i++){
+                        for (int j = 0; j<3; j++){
+                            System.out.print(boxes[i][j].getState());
                         }
                         System.out.println();
-                    } 
-        }));
-        anchorPane.getChildren().add(button);
+                    }
+                    System.out.println();
+                    stageS.setScene(Scene1);
+                    stageS.setWidth(800);
+                    stageS.setHeight(500);
+                    
+               
+                            
+                }
+            }));
+            anchorPane.getChildren().add(button);
+            
+            
+            
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
 
     
