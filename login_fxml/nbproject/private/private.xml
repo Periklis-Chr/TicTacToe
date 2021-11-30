@@ -3,11 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/OneDrive/Documents/git/Tictac.game/login_fxml/src/login_fxml/Texture.java</file>
-            <file>file:/F:/OneDrive/Documents/git/Tictac.game/login_fxml/src/login_fxml/Login_fxml.java</file>
-            <file>file:/F:/OneDrive/Documents/git/Tictac.game/login_fxml/src/login_fxml/FXMLDocumentController.java</file>
-            <file>file:/F:/OneDrive/Documents/git/Tictac.game/login_fxml/src/login_fxml/MatrixBoxes.java</file>
-            <file>file:/F:/OneDrive/Documents/git/Tictac.game/login_fxml/src/login_fxml/BoxQ.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/Texture.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/BoxQ.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/MatrixBoxes.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/move.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/Login_fxml.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/FXMLDocument.fxml</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/FXMLDocument2.fxml</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/Info.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/grid.css</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/FXMLDocumentController.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/ScenesSet.java</file>
+            <file>file:/F:/OneDrive/Documents/git/Tictac.game-game/login_fxml/src/TicTacToe/rootCreate.java</file>
         </group>
     </open-files>
 </project-private>

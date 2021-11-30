@@ -15,7 +15,6 @@ import javafx.stage.StageStyle;
 public class Login_fxml extends Application {
     public static Stage stageS;
     
-    
     @Override
     public void start(Stage stage) throws Exception {
         stage(stage);
@@ -33,7 +32,7 @@ public class Login_fxml extends Application {
     public void stage(Stage stage) throws Exception{
         
         rootCreate root = new rootCreate("FXMLDocument.fxml");
-        ScenesSet scene = new ScenesSet(root.getRoot());
+        ScenesSet scene = new ScenesSet(root.getRoot(),"#hbox2");
         
         stage.setScene(scene);
         scene.setFill(Color.web("#324ea8"));

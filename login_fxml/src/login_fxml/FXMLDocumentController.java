@@ -13,17 +13,12 @@ import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
-import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.stage.StageStyle;
 import static login_fxml.Login_fxml.stageS;
 
 /**
@@ -40,10 +35,6 @@ public class FXMLDocumentController implements Initializable {
     private AnchorPane anchorPane;
     @FXML
     private AnchorPane anchorPane2;
-    @FXML
-    private VBox vbox;
-    @FXML
-    private Pane pane;
     @FXML
     private void handleButtonAction(ActionEvent event) {
         
@@ -83,7 +74,9 @@ public class FXMLDocumentController implements Initializable {
             
             
             rootCreate root = new rootCreate("FXMLDocument2.fxml");
-            ScenesSet Scene1 = new ScenesSet(root.getRoot());
+            
+            
+            
             
             Button button = new Button();
             button.setOnMouseClicked((new EventHandler<MouseEvent>() {
@@ -95,14 +88,18 @@ public class FXMLDocumentController implements Initializable {
                         System.out.println();
                     }
                     System.out.println();
+                    ScenesSet Scene1 = new ScenesSet(root.getRoot(),"#hbox1");
                     stageS.setScene(Scene1);
                     stageS.setWidth(800);
                     stageS.setHeight(500);
+                    
                     
                
                             
                 }
             }));
+            
+            
             anchorPane.getChildren().add(button);
             
             
@@ -114,6 +111,7 @@ public class FXMLDocumentController implements Initializable {
 
     
     }
+    
         
     
 }
