@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package login_fxml;
+package TicTacToe;
 
 import javafx.event.EventHandler;
 import javafx.scene.Parent;
@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.SceneAntialiasing;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
-import static login_fxml.Login_fxml.stageS;
+import static TicTacToe.TicTacToe.stageS;
 
 /**
  *

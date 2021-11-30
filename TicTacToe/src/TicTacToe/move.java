@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package login_fxml;
+package TicTacToe;
 
 import javafx.animation.Animation.Status;
 import javafx.animation.ParallelTransition;
@@ -13,7 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.text.Text;
 import javafx.scene.transform.Rotate;
 import javafx.util.Duration;
-import static login_fxml.Login_fxml.stageS;
+import static TicTacToe.TicTacToe.stageS;
 
 /**
  *
