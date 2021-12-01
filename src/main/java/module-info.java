@@ -2,7 +2,6 @@ module gr.ihu.tictactoe {
     requires javafx.controls;
     requires javafx.fxml;
 
-
     opens gr.ihu.tictactoe to javafx.fxml;
     exports gr.ihu.tictactoe;
     exports gr.ihu.tictactoe.controller;
