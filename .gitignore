@@ -2,9 +2,6 @@
 /.idea/compiler.xml
 /.idea/encodings.xml
 /.idea/jarRepositories.xml
-/src/main/resources/gr/ihu/tictactoe/fxml/main-view.fxml
-/src/main/java/gr/ihu/tictactoe/MainApplication.java
-/src/main/java/gr/ihu/tictactoe/controller/MainController.java
 /.idea/libraries/Maven__com_jfoenix_jfoenix_9_0_10.xml
 /.idea/libraries/Maven__de_jensd_fontawesomefx_8_9.xml
 /.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml
@@ -22,9 +19,6 @@
 /.idea/libraries/Maven__org_openjfx_javafx_graphics_win_16.xml
 /.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
 /.idea/misc.xml
-/src/main/java/module-info.java
 /.idea/modules.xml
-/pom.xml
-/TicTacToe.iml
 /.idea/uiDesigner.xml
 /.idea/vcs.xml
