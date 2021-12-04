@@ -2,6 +2,7 @@ module gr.ihu.tictactoe {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires mysql.connector.java;
 
     opens gr.ihu.tictactoe to javafx.fxml;
     exports gr.ihu.tictactoe;
