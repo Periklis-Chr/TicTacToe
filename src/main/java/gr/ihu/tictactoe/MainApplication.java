@@ -8,11 +8,12 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.io.IOException;
 
 public class MainApplication extends Application {
+    public static Stage StageS;
     @Override
     public void start(Stage primaryStage) throws Exception{
+        StageS = primaryStage;
         Parent root =FXMLLoader.load(getClass().getResource("fxml/signin_view.fxml"));
         Scene scene = new Scene(root, 1024, 580);
         primaryStage.initStyle(StageStyle.UNDECORATED);

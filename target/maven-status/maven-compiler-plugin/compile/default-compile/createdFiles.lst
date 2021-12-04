@@ -1,5 +1,9 @@
-module-info.class
 gr\ihu\tictactoe\controller\SignUpController.class
 gr\ihu\tictactoe\DataBaseConnection.class
 gr\ihu\tictactoe\MainApplication.class
 gr\ihu\tictactoe\controller\SignInController.class
+gr\ihu\tictactoe\ScenesSet.class
+gr\ihu\tictactoe\ScenesSet$1.class
+module-info.class
+gr\ihu\tictactoe\ScenesSet$2.class
+gr\ihu\tictactoe\rootCreate.class

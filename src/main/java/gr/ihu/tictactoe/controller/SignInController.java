@@ -1,25 +1,19 @@
 package gr.ihu.tictactoe.controller;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import gr.ihu.tictactoe.DataBaseConnection;
 import gr.ihu.tictactoe.MainApplication;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.StageStyle;
