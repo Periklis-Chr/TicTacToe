@@ -15,20 +15,11 @@ public class MainApplication extends Application {
     public void start(Stage primaryStage) throws Exception{
         StageS = primaryStage;
         Parent root =FXMLLoader.load(getClass().getResource("fxml/signin_view.fxml"));
-        Scene scene = new Scene(root, 1024, 580);
+        Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setTitle("TicTacToe!");
         primaryStage.setScene(scene);
         primaryStage.show();
-
-        scene.setOnMousePressed((MouseEvent event) -> {
-            xOffset = event.getSceneX();
-            yOffset = event.getSceneY();
-        });
-        scene.setOnMouseDragged((MouseEvent event) -> {
-            primaryStage.setX(event.getScreenX() - xOffset);
-            primaryStage.setY(event.getScreenY() - yOffset);
-        });
     }
 
     static double xOffset = 0;
