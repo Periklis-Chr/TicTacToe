@@ -26,23 +26,4 @@ public class DataBaseConnection {
             }
             return databaseLink;
         }
-    //1try
-//    public  Connection getConnection(){
-//        String databaseName = "user_account";
-//        String databaseUser = "user";
-//        String databasePassword = "!PutYourPassword!";
-//        String url = "jdbc:mysql://users.it.ihu.gr:3333/it175073/mysql/data/quarto_db/" + databaseName;
-//
-//        try{
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-//            databaseLink = DriverManager.getConnection(url,databaseUser,databasePassword);
-//        }catch (Exception e){
-//            e.printStackTrace();
-//            e.getCause();
-//        }
-//
-//        return databaseLink;
-//    }
-
-
 }

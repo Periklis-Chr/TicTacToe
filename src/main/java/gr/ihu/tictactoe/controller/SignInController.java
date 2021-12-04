@@ -46,22 +46,6 @@ public class SignInController {
         System.exit(0);
         Platform.exit();
     }
-    //SignUpButtonOnAction
-//    public void SignUpButtonOnAction(ActionEvent event) throws IOException {
-////        try {
-////            Stage registerStage = new Stage();
-////            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
-////            Scene scene = new Scene(fxmlLoader.load());
-////            registerStage.initStyle(StageStyle.UNDECORATED);
-////            registerStage.setTitle("SignUp_TicTacToe");
-////            registerStage.setScene(scene);
-////            registerStage.show();
-////        }
-////        catch (Exception e){
-////            e.printStackTrace();
-////            e.getCause();
-////        }
-//    }
 
     public void SignInButtonOnAction(ActionEvent event) {
         if (UserNameTextField.getText().isBlank() == false && PasswordField.getText().isBlank() == false) {
@@ -100,14 +84,6 @@ public class SignInController {
     }
 
     public void SignUpButtonOnAction(ActionEvent event) throws IOException{
-        //try {
-//            Stage registerStage = new Stage();
-//            Parent root = FXMLLoader.load(getClass().getResource("fxml/signup_view.fxml"));
-//            Scene scene = new Scene(root, 1024, 580);
-//            registerStage.initStyle(StageStyle.UNDECORATED);
-//            registerStage.setTitle("TicTacToe!");
-//            registerStage.setScene(scene);
-//            registerStage.show();
             Stage main = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 1024, 580);
@@ -125,33 +101,7 @@ public class SignInController {
                 main.setX(mouseEvent.getScreenX() - xOffset);
                 main.setY(mouseEvent.getScreenY() - yOffset);
             });
-        //}
-//        catch (Exception e){
-//            e.printStackTrace();
-//            e.getCause();
-//        }
     }
         static double xOffset = 0;
         static double yOffset = 0;
     }
-//        Stage main = new Stage();
-//        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 1024, 580);
-//        main.initStyle(StageStyle.TRANSPARENT);
-//
-//        scene.setOnMousePressed((MouseEvent event) -> {
-//            xOffset = event.getSceneX();
-//            yOffset = event.getSceneY();
-//        });
-//        scene.setOnMouseDragged((MouseEvent event) -> {
-//            main.setX(event.getScreenX() - xOffset);
-//            main.setY(event.getScreenY() - yOffset);
-//        });
-//        main.setTitle("TicTacToe");
-//        main.setScene(scene);
-//        main.show();
-//    }
-//
-//    static double xOffset = 0;
-//    static double yOffset = 0;
-//}
