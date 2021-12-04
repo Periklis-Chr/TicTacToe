@@ -60,7 +60,6 @@
                   <Glow level="1.0" />
                </effect>
                 </ImageView>
-            <AnchorPane layoutY="-30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="10.0" styleClass="parent" stylesheets="@../css/main.css" />
             </children></AnchorPane>
         <AnchorPane layoutX="377.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="647.0" style="-fx-background-color: #252679;">
             <children>
@@ -230,8 +229,6 @@
                         <Font size="15.0" />
                     </font>
                 </Label>
-            <AnchorPane layoutX="637.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="10.0" styleClass="parent" stylesheets="@../css/main.css" />
-            <AnchorPane layoutX="-379.0" layoutY="539.0" prefHeight="10.0" prefWidth="1026.0" styleClass="parent" stylesheets="@../css/main.css" />
             </children></AnchorPane>
     </children>
 </AnchorPane>

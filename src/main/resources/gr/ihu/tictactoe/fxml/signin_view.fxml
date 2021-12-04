@@ -96,9 +96,6 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <AnchorPane layoutX="570.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="10.0" styleClass="parent" stylesheets="@../css/main.css" />
-            <AnchorPane layoutX="-444.0" layoutY="-35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="10.0" styleClass="parent" stylesheets="@../css/main.css" />
-            <AnchorPane layoutX="-444.0" layoutY="535.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" />
             </children></AnchorPane>
     </children>
 </AnchorPane>
