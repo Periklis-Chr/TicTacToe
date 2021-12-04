@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="signUp_view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.SignUpController">
+<AnchorPane id="AnchorPane" fx:id="signUp_view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.SignUpController">
     <children>
         <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
             <padding>
@@ -77,7 +77,7 @@
                         <Font name="Arial" size="30.0" />
                     </font>
                 </Label>
-            <TextField fx:id="FirstName" layoutX="55.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="First Name" style="-fx-background-color: white;">
+            <TextField fx:id="setFirstName" layoutX="55.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="First Name" style="-fx-background-color: white;">
                <padding>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>
@@ -88,7 +88,7 @@
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <TextField fx:id="LastName" layoutX="342.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" style="-fx-background-color: white;">
+            <TextField fx:id="setLastName" layoutX="342.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" style="-fx-background-color: white;">
                <padding>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>
@@ -99,7 +99,7 @@
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-                <TextField fx:id="Email" layoutX="55.0" layoutY="198.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="538.0" promptText="Email" style="-fx-background-color: white;">
+                <TextField fx:id="setEmail" layoutX="55.0" layoutY="198.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="538.0" promptText="Email" style="-fx-background-color: white;">
                <padding>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>
@@ -109,7 +109,7 @@
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></TextField>
-            <TextField fx:id="UserName" layoutX="55.0" layoutY="263.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="538.0" promptText="User Name" style="-fx-background-color: white;">
+            <TextField fx:id="setUserName" layoutX="55.0" layoutY="263.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="538.0" promptText="User Name" style="-fx-background-color: white;">
                <padding>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>
@@ -120,7 +120,7 @@
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-                <PasswordField fx:id="Password" layoutX="55.0" layoutY="328.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="538.0" promptText="Password" style="-fx-background-color: white;">
+                <PasswordField fx:id="setPassword" layoutX="55.0" layoutY="328.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="538.0" promptText="Password" style="-fx-background-color: white;">
                <padding>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>
@@ -130,7 +130,7 @@
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></PasswordField>
-            <PasswordField fx:id="ConfirmPassword" layoutX="54.0" layoutY="393.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="538.0" promptText="Confirm Password" style="-fx-background-color: white;">
+            <PasswordField fx:id="setConfirmPassword" layoutX="54.0" layoutY="393.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="538.0" promptText="Confirm Password" style="-fx-background-color: white;">
                <padding>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>

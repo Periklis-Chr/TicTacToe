@@ -1,0 +1,5 @@
+module-info.class
+gr\ihu\tictactoe\controller\SignUpController.class
+gr\ihu\tictactoe\DataBaseConnection.class
+gr\ihu\tictactoe\MainApplication.class
+gr\ihu\tictactoe\controller\SignInController.class

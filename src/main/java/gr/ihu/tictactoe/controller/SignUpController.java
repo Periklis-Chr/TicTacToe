@@ -1,31 +1,17 @@
 package gr.ihu.tictactoe.controller;
 
 import gr.ihu.tictactoe.DataBaseConnection;
-import gr.ihu.tictactoe.MainApplication;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ResourceBundle;
-
-import java.net.URL;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import javafx.event.ActionEvent;
-import javafx.stage.StageStyle;
-import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class SignUpController{
@@ -84,7 +70,7 @@ public class SignUpController{
         String Password = setPassword.getText();
 
         String insertFields = "insert into user_account (firstname, lastname, email, username, pass) value ('";
-        String insertValues = setFirstName + "', '" + setLastName + "', '" + setEmail + "', '" + setUserName + "', '" + setPassword + "')" ;
+        String insertValues = firstName + "', '" + lastName + "', '" + Email + "', '" + Username + "', '" + Password + "')" ;
         String insertToRegister = insertFields + insertValues;
 
         try{
