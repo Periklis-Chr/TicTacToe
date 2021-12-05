@@ -28,8 +28,15 @@ public class ScenesSet extends Scene{
             public void handle(MouseEvent event) {
                MainApplication.StageS.setX(event.getScreenX() - xOffset);
                MainApplication.StageS.setY(event.getScreenY() - yOffset);
+               MainApplication.StageS.setOpacity(0.8f);
             }
         }));
+        Hbox.setOnDragDone((event) ->{
+            MainApplication.StageS.setOpacity(1.0f);
+        });
+        Hbox.setOnMouseReleased((event) ->{
+            MainApplication.StageS.setOpacity(1.0f);
+        });
     }
     
     
