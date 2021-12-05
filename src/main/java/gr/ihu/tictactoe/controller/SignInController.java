@@ -86,12 +86,15 @@ public class SignInController {
     }
 
     public void SignUpButtonOnAction(ActionEvent event) throws Exception{
-            Stage main = new Stage();
-            Parent root = FXMLLoader.load(MainApplication.class.getResource("fxml/signup_view.fxml"));
-           // FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
-            Scene scene = new ScenesSet(root, 1024, 580);
-            MainApplication.StageS.setScene(scene);
+         toRegister();
     }
         static double xOffset = 0;
         static double yOffset = 0;
+        
+    public void toRegister() throws Exception{
+        Parent root =FXMLLoader.load(MainApplication.class.getResource("fxml/signup_view.fxml"));
+        Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
+        MainApplication.StageS.setScene(scene);    
     }
+    
+}

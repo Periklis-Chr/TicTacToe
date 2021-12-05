@@ -9,7 +9,12 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-
+import gr.ihu.tictactoe.ScenesSet;
+import javafx.scene.Parent;
+import gr.ihu.tictactoe.MainApplication;
+import javafx.fxml.FXMLLoader;
+import gr.ihu.tictactoe.ScenesSet;
+import javafx.scene.Scene;
 
 import java.sql.Connection;
 import java.sql.Statement;
@@ -49,9 +54,11 @@ public class SignUpController{
         Platform.exit();
     }
 
-    public void RegisterButtonOnAction(){
+    public void RegisterButtonOnAction() throws Exception {
         if(setPassword.getText().equals(setConfirmPassword.getText())){
             registerUser();
+            toLogin();
+            
         }
         else{
             messageLabel.setStyle("-fx-text-fill: red;");
@@ -78,11 +85,18 @@ public class SignUpController{
             statement.executeUpdate(insertToRegister);
             messageLabel.setStyle("-fx-text-fill: green;");
             messageLabel.setText("User has been registered successfully!");
-            System.exit(0);
+            //System.exit(0);
         }
         catch (Exception e){
             e.printStackTrace();
             e.getCause();
         }
+    }
+    public void toLogin() throws Exception{
+        Stage main = new Stage();
+        Parent root = FXMLLoader.load(MainApplication.class.getResource("fxml/signin_view.fxml"));
+       // FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
+        Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
+        MainApplication.StageS.setScene(scene);    
     }
 }
