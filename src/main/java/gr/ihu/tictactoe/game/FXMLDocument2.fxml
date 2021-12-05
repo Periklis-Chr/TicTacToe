@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #1F182C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox id="hbox1" fx:id="Hbox1" alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: #1F182C;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="37.0" prefWidth="363.0" style="-fx-background-color: #252679;" />
+            <AnchorPane prefHeight="37.0" prefWidth="351.0" style="-fx-background-color: #1F182C;" />
+            <FontAwesomeIconView fill="RED" glyphName="MINUS" size="20">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="RED" glyphName="CIRCLE" size="20">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="RED" glyphName="CLOSE" size="27">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <Pane prefHeight="463.0" prefWidth="363.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView blendMode="COLOR_DODGE" cache="true" fitHeight="213.0" fitWidth="276.0" layoutX="80.0" layoutY="125.0" nodeOrientation="INHERIT" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_tic_tac_toe_120px_3.png" />
+               </image>
+            <cursor>
+                    <Cursor fx:constant="MOVE" />
+                </cursor>
+            </ImageView>
+            <Label layoutX="116.0" layoutY="48.0" text="Tic Tac Toe" textFill="#a8a8a8">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="463.0" prefWidth="421.0" style="-fx-background-color: #252679;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="293.0" prefHeight="34.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: #364995; -fx-font-weight: white;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="153.0" layoutY="40.0" prefHeight="54.0" prefWidth="131.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="243.0" layoutY="293.0" prefHeight="34.0" prefWidth="110.0" ripplerFill="#fcfcfc" style="-fx-background-color: #364995; -fx-font-weight: white;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Hyperlink alignment="CENTER" layoutX="84.0" layoutY="364.0" prefHeight="34.0" prefWidth="269.0" text="Forgot Password?" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Hyperlink>
+            <PasswordField layoutX="84.0" layoutY="215.0" prefHeight="25.0" prefWidth="270.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <TextField layoutX="84.0" layoutY="145.0" prefHeight="25.0" prefWidth="270.0" promptText="Username/Mail">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

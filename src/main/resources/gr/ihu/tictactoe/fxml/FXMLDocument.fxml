@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: #324ea8;" styleClass="root" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.game.FXMLDocumentController">
+   <stylesheets>
+    <URL value="@../css/grid.css" />
+    </stylesheets>
+   <children>
+      <HBox id="hbox2" fx:id="Hbox2" alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="1500.0" style="-fx-background-color: #1F182C;">
+         <children>
+            <AnchorPane prefHeight="37.0" prefWidth="363.0" style="-fx-background-color: #252679;" />
+            <AnchorPane prefHeight="37.0" prefWidth="351.0" style="-fx-background-color: #1F182C;" />
+            <FontAwesomeIconView fill="RED" glyphName="MINUS" size="20">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="RED" glyphName="CIRCLE" size="20">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="RED" glyphName="CLOSE" size="27">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="anchorPane2" layoutX="284.0" layoutY="138.0" prefHeight="300.0" prefWidth="300.0" />
+      <AnchorPane layoutX="1100.0" layoutY="213.0" maxHeight="150.0" maxWidth="200.0" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: #1d1f8a; -fx-background-radius: 30px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);;">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1310.0" layoutY="213.0" maxHeight="150.0" maxWidth="200.0" minWidth="50.0" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: #1d1f8a; -fx-background-radius: 30px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);;">
+         <children>
+            <Text fx:id="XScore" fill="WHITE" layoutX="12.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text fx:id="OScore" fill="WHITE" layoutX="12.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -19,6 +19,14 @@ public class MainApplication extends Application {
         primaryStage.setTitle("TicTacToe!");
         primaryStage.setScene(scene);
         primaryStage.show();
+          
+          
+//        Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
+//        primaryStage.initStyle(StageStyle.UNDECORATED);
+//        primaryStage.setTitle("TicTacToe!");
+//        primaryStage.setScene(scene);
+//        primaryStage.show();
+        
     }
 
     public static void main(String[] args) {

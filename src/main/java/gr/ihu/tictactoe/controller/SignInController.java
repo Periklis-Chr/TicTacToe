@@ -90,6 +90,7 @@ public class SignInController {
         Parent root =FXMLLoader.load(MainApplication.class.getResource("fxml/signup_view.fxml"));
         Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
         MainApplication.StageS.setScene(scene);    
+        root =FXMLLoader.load(MainApplication.class.getResource("fxml/FXMLDocument.fxml"));
     }
     
 }

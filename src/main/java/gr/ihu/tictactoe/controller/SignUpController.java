@@ -54,6 +54,14 @@ public class SignUpController{
         System.exit(0);
         Platform.exit();
     }
+    
+    @FXML
+    private void clearbox(MouseEvent event) {
+        TextField text = ((TextField)event.getSource());
+        text.setStyle("-fx-border-color: ;");
+        setError("");
+        
+    }
 
     public void RegisterButtonOnAction() throws Exception {
         boolean anyEmpty = setFirstName.getText().equals("") || 
@@ -65,12 +73,26 @@ public class SignUpController{
         
         if(anyEmpty){
             if(setFirstName.getText().equals("")){
+                setFirstName.setStyle("-fx-border-color: red;");
 
             }
-            if(setLastName.getText().equals(" ")){
-
+            if(setLastName.getText().equals("")){
+                setLastName.setStyle("-fx-border-color: red;");
             }
-            if(setEmail.getText().equals(" ")){
+            if(setEmail.getText().equals("")){
+                setEmail.setStyle("-fx-border-color: red;");
+                
+            }
+            if(setUserName.getText().equals("")){
+                setUserName.setStyle("-fx-border-color: red;");
+                
+            }
+            if(setPassword.getText().equals("")){
+                setPassword.setStyle("-fx-border-color: red;");
+                
+            }
+            if(setConfirmPassword.getText().equals("")){
+                setConfirmPassword.setStyle("-fx-border-color: red;");
                 
             }
             setError("Fill the Blanks");
@@ -83,6 +105,7 @@ public class SignUpController{
 
             }
             else{
+                setConfirmPassword.setStyle("-fx-border-color: red;");
                 setError("Not Matching Password");
             }
         }
