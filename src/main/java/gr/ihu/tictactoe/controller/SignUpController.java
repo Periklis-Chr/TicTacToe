@@ -1,37 +1,23 @@
 package gr.ihu.tictactoe.controller;
-
-<<<<<<< HEAD
-import javafx.application.Platform;
-=======
 import gr.ihu.tictactoe.DataBaseConnection;
-
->>>>>>> 5cf4199c33b9ccd1f8eb5fd4278b26550060ae73
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 
 import javafx.stage.Stage;
 import javafx.application.Platform;
 
-import javafx.scene.Scene;
-import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-<<<<<<< HEAD
 import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-=======
 
 import gr.ihu.tictactoe.ScenesSet;
 import gr.ihu.tictactoe.MainApplication;
->>>>>>> 5cf4199c33b9ccd1f8eb5fd4278b26550060ae73
-
 import java.sql.Statement;
 import java.sql.Connection;
 
-import gr.ihu.tictactoe.*;
 import java.util.regex.Pattern;
 
 public class SignUpController{

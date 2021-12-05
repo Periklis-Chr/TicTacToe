@@ -1,32 +1,21 @@
 package gr.ihu.tictactoe.controller;
 
-<<<<<<< HEAD
-import javafx.application.Platform;
-=======
-import java.io.IOException;
-
->>>>>>> 5cf4199c33b9ccd1f8eb5fd4278b26550060ae73
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.application.Platform;
 
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import javafx.event.ActionEvent;
 
 import javafx.scene.Scene;
-import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-<<<<<<< HEAD
+
 import javafx.scene.Parent;
-import gr.ihu.tictactoe.*;
 import java.io.IOException;
-import javafx.stage.StageStyle;
-=======
 import gr.ihu.tictactoe.ScenesSet;
 import gr.ihu.tictactoe.MainApplication;
 import gr.ihu.tictactoe.DataBaseConnection;
@@ -34,7 +23,6 @@ import gr.ihu.tictactoe.DataBaseConnection;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
->>>>>>> 5cf4199c33b9ccd1f8eb5fd4278b26550060ae73
 
 
 public class SignInController {
