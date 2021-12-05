@@ -58,11 +58,6 @@
             <artifactId>fxyz3d</artifactId>
             <version>0.5.4</version>
         </dependency>
-        <dependency>
-            <groupId>org.fxyz3d</groupId>
-            <artifactId>fxyz3d</artifactId>
-            <version>0.5.4</version>
-        </dependency>
 
     </dependencies>
 
