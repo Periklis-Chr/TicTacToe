@@ -24,7 +24,7 @@ public class MatrixBoxes {
     private float x;
     private float y;
     private float z;
-    MatrixBoxes(int g,int sx,int sy,float x) throws FileNotFoundException{
+    public MatrixBoxes(int g,int sx,int sy,float x) throws FileNotFoundException{
         gap = g;
         startx = sx;
         starty = sy;
@@ -35,7 +35,7 @@ public class MatrixBoxes {
         
     }
     
-    MatrixBoxes(int g,int sx,int sy,float x,float y,float z) throws FileNotFoundException{
+    public MatrixBoxes(int g,int sx,int sy,float x,float y,float z) throws FileNotFoundException{
         gap = g;
         startx = sx;
         starty = sy;

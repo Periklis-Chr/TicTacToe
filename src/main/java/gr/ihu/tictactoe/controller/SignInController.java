@@ -1,30 +1,24 @@
 package gr.ihu.tictactoe.controller;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.application.Platform;
 
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 
-import javafx.scene.Parent;
 import java.io.IOException;
-import gr.ihu.tictactoe.ScenesSet;
-import gr.ihu.tictactoe.MainApplication;
 import gr.ihu.tictactoe.DataBaseConnection;
+import gr.ihu.tictactoe.SceneChange;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import javafx.geometry.Rectangle2D;
-import javafx.stage.Screen;
 
 
 public class SignInController {
@@ -56,7 +50,7 @@ public class SignInController {
     }
 
     public void SignInButtonOnAction(ActionEvent event) throws IOException {
-        toGame();
+        SceneChange.toGame();
         
         if (UserNameTextField.getText().isBlank() == false && PasswordField.getText().isBlank() == false) {
             messageLabel.setText("You try to login!");
@@ -94,27 +88,9 @@ public class SignInController {
     }
 
     public void SignUpButtonOnAction(ActionEvent event) throws Exception{
-         toRegister();
+         SceneChange.toRegister();
     }
         
-    public void toRegister() throws Exception{
-        Parent root =FXMLLoader.load(MainApplication.class.getResource("fxml/signup_view.fxml"));
-        Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
-        MainApplication.StageS.setScene(scene);    
-//        root =FXMLLoader.load(MainApplication.class.getResource("fxml/FXMLDocument.fxml"));
-    }
-    public void toGame() throws IOException{
-        
-        Parent root =FXMLLoader.load(MainApplication.class.getResource("fxml/FXMLDocument.fxml"));
-        Scene scene = new ScenesSet(root, 1500, 900,"#Hbox");
-        MainApplication.StageS.setTitle("TicTacToe!");
-        Rectangle2D bounds = Screen.getPrimary().getVisualBounds();
-        double x = bounds.getMinX() + (bounds.getWidth() - scene.getWidth()) * 0.5;
-        double y = bounds.getMinY() + (bounds.getHeight() - scene.getHeight()) * 0.5;
-        MainApplication.StageS.setX(x);
-        MainApplication.StageS.setY(y);
-        MainApplication.StageS.setScene(scene);
-        MainApplication.StageS.show();
-    }
+    
     
 }

@@ -2,8 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML2.java to edit this template
  */
-package gr.ihu.tictactoe.game;
+package gr.ihu.tictactoe.controller;
 
+import gr.ihu.tictactoe.game.BoxQ;
+import gr.ihu.tictactoe.game.MatrixBoxes;
 import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -26,7 +28,7 @@ import javafx.stage.Stage;
  *
  * @author asus
  */
-public class FXMLDocumentController implements Initializable {
+public class GameController implements Initializable {
     
     BoxQ boxes[][] = new BoxQ[3][3];
     
@@ -76,7 +78,7 @@ public class FXMLDocumentController implements Initializable {
             anchorPane2.getChildren().add(group);
             boxes =  matrix.getBoxes();
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GameController.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     

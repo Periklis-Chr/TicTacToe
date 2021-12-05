@@ -15,6 +15,7 @@ import javafx.scene.Scene;
 
 import gr.ihu.tictactoe.ScenesSet;
 import gr.ihu.tictactoe.MainApplication;
+import gr.ihu.tictactoe.SceneChange;
 import java.sql.Statement;
 import java.sql.Connection;
 
@@ -104,7 +105,7 @@ public class SignUpController{
         if(patternMatches(setEmail.getText(),regexPattern)){
             if(setPassword.getText().equals(setConfirmPassword.getText())){
                 registerUser();
-                toLogin();
+                SceneChange.toLogin();
 
             }
             else{
@@ -144,13 +145,7 @@ public class SignUpController{
             e.getCause();
         }
     }
-    public void toLogin() throws Exception{
-        Stage main = new Stage();
-        Parent root = FXMLLoader.load(MainApplication.class.getResource("fxml/signin_view.fxml"));
-       // FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
-        Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
-        MainApplication.StageS.setScene(scene);    
-    }
+    
 
     public static boolean patternMatches(String emailAddress, String regexPattern) {
         return Pattern.compile(regexPattern)
