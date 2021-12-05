@@ -1,3 +1,4 @@
+
 module gr.ihu.tictactoe {
     requires javafx.controls;
     requires javafx.fxml;
@@ -8,5 +9,7 @@ module gr.ihu.tictactoe {
     exports gr.ihu.tictactoe;
     exports gr.ihu.tictactoe.controller;
     opens gr.ihu.tictactoe.controller to javafx.fxml;
+    requires org.fxyz3d.core;
 
 }
+

@@ -5,13 +5,14 @@
  */
 package gr.ihu.tictactoe.game;
 
+
 import org.fxyz3d.shapes.primitives.CuboidMesh;
 
 /**
  *
  * @author User
  */
-public class BoxQ extends CuboidMesh{
+public class BoxQ extends CuboidMesh {
     private String state = " ";
     
     BoxQ(float w,float h,float d){
