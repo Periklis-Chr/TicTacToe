@@ -9,14 +9,18 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  *
@@ -37,6 +41,17 @@ public class FXMLDocumentController implements Initializable {
     private Text XScore;
     @FXML
     private Text OScore;
+    @FXML
+    private void minimizedWindow(MouseEvent event) {
+        Stage stage = new Stage();
+        stage = (Stage) anchorPane.getScene().getWindow();
+        stage.setIconified(true);
+    }
+    @FXML
+    private void closeWindow(MouseEvent event) {
+        System.exit(0);
+        Platform.exit();
+    }
     
     private void boxonclick(ActionEvent event) {
         System.out.println("You clicked me!");

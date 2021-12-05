@@ -1,38 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: #324ea8;" styleClass="root" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.game.FXMLDocumentController">
-   <stylesheets>
-    <URL value="@../css/grid.css" />
-    </stylesheets>
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: #324ea8;" styleClass="root" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.game.FXMLDocumentController">
    <children>
-      <HBox id="hbox2" fx:id="Hbox2" alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="1500.0" style="-fx-background-color: #1F182C;">
+      <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1500.0" styleClass="parent" stylesheets="@../css/main.css">
          <children>
-            <AnchorPane prefHeight="37.0" prefWidth="363.0" style="-fx-background-color: #252679;" />
-            <AnchorPane prefHeight="37.0" prefWidth="351.0" style="-fx-background-color: #1F182C;" />
-            <FontAwesomeIconView fill="RED" glyphName="MINUS" size="20">
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1420.0">
                <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets />
                </HBox.margin>
-            </FontAwesomeIconView>
-            <FontAwesomeIconView fill="RED" glyphName="CIRCLE" size="20">
-               <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </HBox.margin>
-            </FontAwesomeIconView>
-            <FontAwesomeIconView fill="RED" glyphName="CLOSE" size="27">
-               <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </HBox.margin>
-            </FontAwesomeIconView>
+               <children>
+                  <Label layoutX="311.0" layoutY="10.0" prefHeight="10.0" prefWidth="395.0" text="Label">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="221.0" style="-fx-text-fill: #9B111E;" text="TicTacToe">
+                     <font>
+                        <Font name="Engravers MT" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizedWindow" prefHeight="30.0" prefWidth="30.0" styleClass="min-btn" stylesheets="@../css/main.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white" onMouseClicked="#minimizedWindow" size="1.3em" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeWindow" prefHeight="30.0" prefWidth="30.0" styleClass="close-btn" stylesheets="@../css/main.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" glyphStyle="-fx-fill:white" onMouseClicked="#closeWindow" size="1.3em" />
+               </graphic>
+            </Label>
          </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
       </HBox>
       <AnchorPane fx:id="anchorPane2" layoutX="284.0" layoutY="138.0" prefHeight="300.0" prefWidth="300.0" />
       <AnchorPane layoutX="1100.0" layoutY="213.0" maxHeight="150.0" maxWidth="200.0" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: #1d1f8a; -fx-background-radius: 30px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);;">

@@ -103,7 +103,7 @@ public class SignInController {
     }
     public void toGame() throws IOException{
         Parent root =FXMLLoader.load(MainApplication.class.getResource("fxml/FXMLDocument.fxml"));
-        Scene scene = new ScenesSet(root, 1500, 900,"#hbox2");
+        Scene scene = new ScenesSet(root, 1500, 900,"#Hbox");
         MainApplication.StageS.setTitle("TicTacToe!");
         MainApplication.StageS.setScene(scene);
         MainApplication.StageS.show();
