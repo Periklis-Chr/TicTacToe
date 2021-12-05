@@ -5,21 +5,16 @@
 package gr.ihu.tictactoe.game;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import gr.ihu.tictactoe.MainApplication;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 
@@ -68,14 +63,6 @@ public class FXMLDocumentController implements Initializable {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-        
-        
-        
-        // rootCreate root = new rootCreate("FXMLDocument2.fxml");
-
-        
 
     
     }

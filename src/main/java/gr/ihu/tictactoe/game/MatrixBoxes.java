@@ -6,13 +6,10 @@
 package gr.ihu.tictactoe.game;
 
 import java.io.FileNotFoundException;
-import javafx.animation.Animation.Status;
-import javafx.animation.RotateTransition;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.transform.Rotate;
-import javafx.util.Duration;
 
 /**
  *
