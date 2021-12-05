@@ -17,6 +17,8 @@ import java.sql.Statement;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.StageStyle;
+import gr.ihu.tictactoe.ScenesSet;
+import javafx.scene.Parent;
 
 
 public class SignInController {
@@ -83,24 +85,12 @@ public class SignInController {
         }
     }
 
-    public void SignUpButtonOnAction(ActionEvent event) throws IOException{
+    public void SignUpButtonOnAction(ActionEvent event) throws Exception{
             Stage main = new Stage();
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 1024, 580);
-            main.initStyle(StageStyle.TRANSPARENT);
-            main.setTitle("TicTacToe");
-            main.setScene(scene);
-            main.show();
-
-
-            scene.setOnMousePressed((MouseEvent mouseEvent) -> {
-                xOffset = mouseEvent.getSceneX();
-                yOffset = mouseEvent.getSceneY();
-            });
-            scene.setOnMouseDragged((MouseEvent mouseEvent) -> {
-                main.setX(mouseEvent.getScreenX() - xOffset);
-                main.setY(mouseEvent.getScreenY() - yOffset);
-            });
+            Parent root = FXMLLoader.load(MainApplication.class.getResource("fxml/signup_view.fxml"));
+           // FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
+            Scene scene = new ScenesSet(root, 1024, 580);
+            MainApplication.StageS.setScene(scene);
     }
         static double xOffset = 0;
         static double yOffset = 0;
