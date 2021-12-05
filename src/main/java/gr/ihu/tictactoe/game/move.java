@@ -5,6 +5,7 @@
  */
 package gr.ihu.tictactoe.game;
 
+import gr.ihu.tictactoe.MainApplication;
 import javafx.animation.Animation.Status;
 import javafx.animation.ParallelTransition;
 import javafx.animation.RotateTransition;
@@ -151,7 +152,7 @@ public class move {
 
     }
     public static void score(){
-        Scene scene = TicTacToe.stageS.getScene();
+        Scene scene = MainApplication.StageS.getScene();
         Text scoreX = (Text) scene.lookup("#XScore");
         scoreX.setText(String.valueOf(Info.scoreX));
         Text scoreO = (Text) scene.lookup("#OScore");

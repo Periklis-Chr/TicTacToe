@@ -16,6 +16,8 @@ import javafx.scene.layout.AnchorPane;
 
 import javafx.scene.Parent;
 import gr.ihu.tictactoe.*;
+import java.io.IOException;
+import javafx.stage.StageStyle;
 
 
 public class SignInController {
@@ -46,7 +48,9 @@ public class SignInController {
         Platform.exit();
     }
 
-    public void SignInButtonOnAction(ActionEvent event) {
+    public void SignInButtonOnAction(ActionEvent event) throws IOException {
+        toGame();
+        
         if (UserNameTextField.getText().isBlank() == false && PasswordField.getText().isBlank() == false) {
             messageLabel.setText("You try to login!");
             validateLogin();
@@ -90,7 +94,14 @@ public class SignInController {
         Parent root =FXMLLoader.load(MainApplication.class.getResource("fxml/signup_view.fxml"));
         Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
         MainApplication.StageS.setScene(scene);    
-        root =FXMLLoader.load(MainApplication.class.getResource("fxml/FXMLDocument.fxml"));
+//        root =FXMLLoader.load(MainApplication.class.getResource("fxml/FXMLDocument.fxml"));
+    }
+    public void toGame() throws IOException{
+        Parent root =FXMLLoader.load(MainApplication.class.getResource("fxml/FXMLDocument.fxml"));
+        Scene scene = new ScenesSet(root, 1500, 900,"#hbox2");
+        MainApplication.StageS.setTitle("TicTacToe!");
+        MainApplication.StageS.setScene(scene);
+        MainApplication.StageS.show();
     }
     
 }

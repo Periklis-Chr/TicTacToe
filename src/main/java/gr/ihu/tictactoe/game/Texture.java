@@ -24,8 +24,10 @@ import javafx.scene.paint.PhongMaterial;
 //"X", " ", " ", " ", " ", "O"
 public class Texture extends PhongMaterial{
     Image textureSet;
+
+//    getClass().getResource("fxml/signin_view.fxml")
     Texture(String file) throws FileNotFoundException{
-        textureSet = new Image(new FileInputStream("src/resources/"+ file));
+        textureSet = new Image(new FileInputStream("src/main/resources/gr/ihu/tictactoe/image/"+ file));
         Texture.this.setDiffuseMap(this.textureSet);
     }
     Texture(String face1, String face2, String face3, String face4, String face5, String face6){

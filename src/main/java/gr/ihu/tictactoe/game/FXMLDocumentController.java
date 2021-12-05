@@ -54,62 +54,27 @@ public class FXMLDocumentController implements Initializable {
     @Override
     
     public void initialize(URL url, ResourceBundle rb) {
+        int gap = 60;
+        int startx = 0;
+        int starty = 0;
+        float x = 200f;
+        //create
+        MatrixBoxes matrix;
         try {
-            int gap = 60;
-            int startx = 0;
-            int starty = 0;
-            float x = 200f;
-            
-            
-            //create
-            MatrixBoxes matrix;
-            try {
-                matrix = new MatrixBoxes(gap,startx,starty,x);
-                Group group = matrix.getGroup();
-                anchorPane2.getChildren().add(group);
-                boxes =  matrix.getBoxes();
-            } catch (FileNotFoundException ex) {
-                Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            
-            
-            
-            
-            
-            rootCreate root = new rootCreate("FXMLDocument2.fxml");
-            
-            
-            
-            
-            Button button = new Button();
-            button.setOnMouseClicked((new EventHandler<MouseEvent>() {
-                public void handle(MouseEvent event) {
-                    for (int i = 0; i<3; i++){
-                        for (int j = 0; j<3; j++){
-                            System.out.print(boxes[i][j].getState());
-                        }
-                        System.out.println();
-                    }
-                    System.out.println();
-                    ScenesSet Scene1 = new ScenesSet(root.getRoot(),"#hbox1");
-                    MainApplication.StageS.setScene(Scene1);
-                    MainApplication.StageS.setWidth(800);
-                    MainApplication.StageS.setHeight(500);
-                    
-                    
-               
-                            
-                }
-            }));
-            
-            
-            anchorPane.getChildren().add(button);
-            
-            
-            
-        } catch (IOException ex) {
+            matrix = new MatrixBoxes(gap,startx,starty,x);
+            Group group = matrix.getGroup();
+            anchorPane2.getChildren().add(group);
+            boxes =  matrix.getBoxes();
+        } catch (FileNotFoundException ex) {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        
+        
+        
+        
+        // rootCreate root = new rootCreate("FXMLDocument2.fxml");
+
         
 
     
