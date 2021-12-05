@@ -1,8 +1,9 @@
 package gr.ihu.tictactoe;
 
-import  java.sql.Connection;
-import  java.sql.DriverManager;
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.DriverManager;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

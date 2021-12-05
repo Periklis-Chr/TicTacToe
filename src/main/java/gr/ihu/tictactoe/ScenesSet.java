@@ -1,12 +1,12 @@
 package gr.ihu.tictactoe;
 
-import javafx.event.EventHandler;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.Parent;
+import javafx.scene.layout.HBox;
+import javafx.event.EventHandler;
 import javafx.scene.SceneAntialiasing;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
-import gr.ihu.tictactoe.MainApplication;
+
 
 public class ScenesSet extends Scene{
     private double xOffset = 0;

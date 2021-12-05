@@ -1,9 +1,15 @@
 package gr.ihu.tictactoe;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+
 import javafx.scene.Scene;
+<<<<<<< HEAD
+=======
+import javafx.scene.Parent;
+
+import javafx.fxml.FXMLLoader;
+
+>>>>>>> 5cf4199c33b9ccd1f8eb5fd4278b26550060ae73
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
