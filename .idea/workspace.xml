@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45801cb3-0ac8-43ca-a7b1-55f153e8c04c" name="Changes" comment="">
+    <list default="true" id="45801cb3-0ac8-43ca-a7b1-55f153e8c04c" name="Changes" comment="close button and minimized butoon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/FXMLDocumentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/css/grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/FXMLDocument.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +68,14 @@
       <option name="presentableId" value="Default" />
       <updated>1638681163916</updated>
     </task>
+    <task id="LOCAL-00001" summary="close button and minimized butoon">
+      <created>1638690426742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638690426743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +88,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="close button and minimized butoon" />
+    <option name="LAST_COMMIT_MESSAGE" value="close button and minimized butoon" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TicTacToe$MainApplication__1_.ic" NAME="MainApplication (1) Coverage Results" MODIFIED="1638683148289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
