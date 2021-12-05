@@ -1,8 +1,5 @@
 package gr.ihu.tictactoe.controller;
 
-import java.io.IOException;
-import gr.ihu.tictactoe.DataBaseConnection;
-import gr.ihu.tictactoe.MainApplication;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,9 +13,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.StageStyle;
-import gr.ihu.tictactoe.ScenesSet;
+
 import javafx.scene.Parent;
+import gr.ihu.tictactoe.*;
 
 
 public class SignInController {
@@ -88,8 +85,6 @@ public class SignInController {
     public void SignUpButtonOnAction(ActionEvent event) throws Exception{
          toRegister();
     }
-        static double xOffset = 0;
-        static double yOffset = 0;
         
     public void toRegister() throws Exception{
         Parent root =FXMLLoader.load(MainApplication.class.getResource("fxml/signup_view.fxml"));

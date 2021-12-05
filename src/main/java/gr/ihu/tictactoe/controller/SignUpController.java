@@ -1,7 +1,5 @@
 package gr.ihu.tictactoe.controller;
 
-import gr.ihu.tictactoe.DataBaseConnection;
-
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -9,15 +7,15 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import gr.ihu.tictactoe.ScenesSet;
 import javafx.scene.Parent;
-import gr.ihu.tictactoe.MainApplication;
 import javafx.fxml.FXMLLoader;
-import gr.ihu.tictactoe.ScenesSet;
 import javafx.scene.Scene;
 
 import java.sql.Connection;
 import java.sql.Statement;
+
+import gr.ihu.tictactoe.*;
+import java.util.regex.Pattern;
 
 public class SignUpController{
 
@@ -41,12 +39,15 @@ public class SignUpController{
     private ImageView registerImageView;
     @FXML
     private Label messageLabel;
+    
+    private String regexPattern = "^(.+)@(\\S+)$";
 
     @FXML
     private void minimizedWindow(MouseEvent event) {
         Stage stage = new Stage();
         stage = (Stage) signUp_view.getScene().getWindow();
         stage.setIconified(true);
+        testUsingSimpleRegex();
     }
     @FXML
     private void closeWindow(MouseEvent event) {
@@ -55,14 +56,39 @@ public class SignUpController{
     }
 
     public void RegisterButtonOnAction() throws Exception {
-        if(setPassword.getText().equals(setConfirmPassword.getText())){
-            registerUser();
-            toLogin();
-            
+        boolean anyEmpty = setFirstName.getText().equals("") || 
+            setLastName.getText().equals("") || 
+            setEmail.getText().equals("") ||
+            setUserName.getText().equals("") ||
+            setPassword.getText().equals("") ||
+            setConfirmPassword.getText().equals("");
+        
+        if(anyEmpty){
+            if(setFirstName.getText().equals("")){
+
+            }
+            if(setLastName.getText().equals(" ")){
+
+            }
+            if(setEmail.getText().equals(" ")){
+                
+            }
+            setError("Fill the Blanks");
+            return;
         }
+        if(patternMatches(setEmail.getText(),regexPattern)){
+            if(setPassword.getText().equals(setConfirmPassword.getText())){
+                registerUser();
+                toLogin();
+
+            }
+            else{
+                setError("Not Matching Password");
+            }
+        }
+
         else{
-            messageLabel.setStyle("-fx-text-fill: red;");
-            messageLabel.setText("Password does not match");
+                setError("Incorect Email");
         }
     }
 
@@ -98,5 +124,23 @@ public class SignUpController{
        // FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/signup_view.fxml"));
         Scene scene = new ScenesSet(root, 1024, 580,"#Hbox");
         MainApplication.StageS.setScene(scene);    
+    }
+
+    public static boolean patternMatches(String emailAddress, String regexPattern) {
+        return Pattern.compile(regexPattern)
+          .matcher(emailAddress)
+          .matches();
+    }
+    
+    public void testUsingSimpleRegex() {
+        String emailAddress = "username@domain.com";
+        String regexPattern = "^(.+)@(\\S+)$";
+        if(patternMatches(emailAddress, regexPattern)){
+            System.out.println("YES");
+        }
+    }
+    public void setError(String error){
+        messageLabel.setStyle("-fx-text-fill: red;");
+        messageLabel.setText(error);
     }
 }
