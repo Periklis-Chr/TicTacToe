@@ -30,6 +30,8 @@ public class SignUpController {
     @FXML
     private Button RegisterButton;
     @FXML
+    private Button regibtn;
+    @FXML
     private TextField setFirstName;
     @FXML
     private TextField setLastName;
@@ -68,6 +70,9 @@ public class SignUpController {
         text.setStyle("-fx-border-color: red ;");
         setError("");
 
+    }
+    public void backButtonOnAction() throws Exception {
+        SceneChange.toLogin();
     }
 
     public void RegisterButtonOnAction() throws Exception {

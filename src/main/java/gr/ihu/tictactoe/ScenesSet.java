@@ -1,7 +1,10 @@
 package gr.ihu.tictactoe;
 
+import com.sun.scenario.effect.Glow;
+import javafx.event.Event;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.event.EventHandler;
 import javafx.scene.SceneAntialiasing;
@@ -40,6 +43,4 @@ public class ScenesSet extends Scene {
             }
         }));
     }
-
-
 }
