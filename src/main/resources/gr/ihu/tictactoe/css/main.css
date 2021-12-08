@@ -26,3 +26,49 @@ FontAwesomeIconView:hover{
 .full-btn:hover{
     -fx-background-color: #171717;
 }
+.btns-navi{
+	-fx-background-color : #404089;
+	-fx-font-weight: bold;
+	-fx-font-size:17;
+	-fx-font-family: "Arial";
+	-fx-text-fill: white;
+}
+
+.btns-navi:hover{
+	-fx-background-color : #232375;
+	-fx-text-fill:  #9B111E;
+}
+.btns-game{
+	-fx-background-color : #1d1f8a;
+	-fx-font-weight: bold;
+	-fx-font-size:17;
+	-fx-font-family: "Arial";
+	-fx-text-fill: white;
+}
+.btns-game:hover{
+	-fx-background-color : #232375;
+	-fx-text-fill:  #9B111E;
+}
+.textArea{
+    -fx-background-color : #50509e;
+}
+.gridPane{
+    -fx-background-color : #252679;
+}
+
+.gameRules{
+    -fx-background-color :  #1d1f8a;
+    -fx-background-radius : 30px;
+}
+
+.signinbtn{
+    -fx-background-color : #364995;
+}
+.signinbtn:hover{
+    -fx-background-color : #2545c9;
+    -fx-text-fill:  #9B111E;
+}
+
+.gameBackground{
+    -fx-background-image: url("../image/pirate.png");
+}

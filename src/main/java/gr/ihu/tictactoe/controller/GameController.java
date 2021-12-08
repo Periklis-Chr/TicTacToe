@@ -1,9 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML2.java to edit this template
- */
 package gr.ihu.tictactoe.controller;
 
+import gr.ihu.tictactoe.SceneChange;
 import gr.ihu.tictactoe.game.BoxQ;
 import gr.ihu.tictactoe.game.MatrixBoxes;
 import java.io.FileNotFoundException;
@@ -17,6 +14,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -24,10 +22,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-/**
- *
- * @author asus
- */
 public class GameController implements Initializable {
     
     BoxQ boxes[][] = new BoxQ[3][3];
@@ -43,6 +37,8 @@ public class GameController implements Initializable {
     private Text XScore;
     @FXML
     private Text OScore;
+    @FXML
+    private Button backMenu;
     @FXML
     private void minimizedWindow(MouseEvent event) {
         Stage stage = new Stage();
@@ -66,10 +62,10 @@ public class GameController implements Initializable {
     @Override
     
     public void initialize(URL url, ResourceBundle rb) {
-        int gap = 60;
+        int gap = 20;
         int startx = 0;
         int starty = 0;
-        float x = 200f;
+        float x = 100f;
         //create
         MatrixBoxes matrix;
         try {
@@ -80,8 +76,11 @@ public class GameController implements Initializable {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(GameController.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
 
-    
+    public void toClickBackMenu(ActionEvent event) throws Exception {
+        SceneChange.toMenu();
+
     }
     
         

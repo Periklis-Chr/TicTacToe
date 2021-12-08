@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: #324ea8;" styleClass="root" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.GameController">
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.GameController">
    <children>
-      <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1500.0" styleClass="parent" stylesheets="@../css/main.css">
+      <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css">
          <children>
-            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1420.0">
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="960.0">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
@@ -22,11 +28,30 @@
                         <Font size="5.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="221.0" style="-fx-text-fill: #9B111E;" text="TicTacToe">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="221.0" style="-fx-text-fill: #9B111E;" text="TicTacToe">
                      <font>
                         <Font name="Engravers MT" size="16.0" />
                      </font>
                   </Label>
+                  <MenuBar layoutX="233.0" layoutY="5.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
                </children>
             </AnchorPane>
             <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizedWindow" prefHeight="30.0" prefWidth="30.0" styleClass="min-btn" stylesheets="@../css/main.css">
@@ -45,33 +70,53 @@
          </padding>
       </HBox>
       <AnchorPane fx:id="anchorPane2" layoutX="284.0" layoutY="138.0" prefHeight="300.0" prefWidth="300.0" />
-      <AnchorPane layoutX="1100.0" layoutY="213.0" maxHeight="150.0" maxWidth="200.0" prefHeight="150.0" prefWidth="180.0" style="-fx-background-color: #1d1f8a; -fx-background-radius: 30px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);;">
+      <VBox layoutX="788.0" layoutY="53.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
          <children>
-            <Text fill="WHITE" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 1">
+            <Button id="backMenu" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toClickBackMenu" prefHeight="38.0" prefWidth="209.0" styleClass="btns-game" stylesheets="@../css/main.css" text="Back to menu" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="30.0" />
+                  <Font size="20.0" />
                </font>
-            </Text>
-            <Text fill="WHITE" layoutX="14.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 2">
-               <font>
-                  <Font name="System Bold" size="30.0" />
-               </font>
-            </Text>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="151.0" prefWidth="234.0" spacing="10.0">
+               <children>
+                  <AnchorPane maxHeight="150.0" maxWidth="200.0" prefHeight="150.0" prefWidth="180.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);" styleClass="gameRules">
+                     <children>
+                        <Text fill="WHITE" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" PLAYER 1" wrappingWidth="148.79999999999995">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" PLAYER 2" wrappingWidth="148.79999999999995">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="150.0" maxWidth="200.0" minWidth="50.0" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: #1d1f8a; -fx-background-radius: 30px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);;">
+                     <children>
+                        <Text fx:id="XScore" fill="WHITE" layoutX="12.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="OScore" fill="WHITE" layoutX="12.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
          </children>
-      </AnchorPane>
-      <AnchorPane layoutX="1310.0" layoutY="213.0" maxHeight="150.0" maxWidth="200.0" minWidth="50.0" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: #1d1f8a; -fx-background-radius: 30px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);;">
-         <children>
-            <Text fx:id="XScore" fill="WHITE" layoutX="12.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="40.0" />
-               </font>
-            </Text>
-            <Text fx:id="OScore" fill="WHITE" layoutX="12.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="40.0" />
-               </font>
-            </Text>
-         </children>
-      </AnchorPane>
+      </VBox>
    </children>
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="gameBackground" />
+   </styleClass>
 </AnchorPane>

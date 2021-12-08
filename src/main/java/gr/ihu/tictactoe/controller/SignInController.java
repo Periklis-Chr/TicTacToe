@@ -49,9 +49,9 @@ public class SignInController {
         Platform.exit();
     }
 
-    public void SignInButtonOnAction(ActionEvent event) throws IOException {
-        SceneChange.toGame();
-        
+    public void SignInButtonOnAction(ActionEvent event) throws Exception {
+        //SceneChange.toGame();
+        SceneChange.toMenu();
         if (UserNameTextField.getText().isBlank() == false && PasswordField.getText().isBlank() == false) {
             messageLabel.setText("You try to login!");
             validateLogin();
