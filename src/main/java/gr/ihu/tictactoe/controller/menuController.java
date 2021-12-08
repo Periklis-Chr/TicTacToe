@@ -1,6 +1,8 @@
 package gr.ihu.tictactoe.controller;
 
+import gr.ihu.tictactoe.MainApplication;
 import gr.ihu.tictactoe.SceneChange;
+import gr.ihu.tictactoe.ScenesSet;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -18,7 +20,11 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 
 public class menuController implements Initializable{
 
@@ -44,6 +50,9 @@ public class menuController implements Initializable{
     private GridPane mainMenuPane;
     @FXML
     private GridPane informationPane;
+    @FXML
+
+    private Pane gamePlayTheGamePane;
     @FXML
     private Hyperlink link1;
     @FXML
@@ -84,7 +93,15 @@ public class menuController implements Initializable{
     
     @Override
     public void initialize(URL url, ResourceBundle rb){
-
+        Parent root;
+        try {
+            root = FXMLLoader.load(MainApplication.class.getResource("fxml/Game_view.fxml"));
+            Scene scene = new ScenesSet(root, 796, 441);
+            gamePlayTheGamePane.getChildren().add(scene.getRoot());
+        } catch (IOException ex) {
+            Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         
     }
 //    public void onClickHyper(){

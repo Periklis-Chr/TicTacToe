@@ -1,6 +1,5 @@
 package gr.ihu.tictactoe;
 
-import com.sun.scenario.effect.Glow;
 import javafx.event.Event;
 import javafx.scene.Scene;
 import javafx.scene.Parent;

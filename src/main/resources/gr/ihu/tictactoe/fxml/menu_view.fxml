@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="main_menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.menuController">
+<AnchorPane id="AnchorPane" fx:id="main_menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.menuController">
     <children>
         <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
             <padding>
@@ -194,7 +194,7 @@
                                 <RowConstraints maxHeight="547.0" minHeight="0.0" prefHeight="122.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Pane fx:id="gamePlayTheGamePane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="796.0" styleClass="gridPane" stylesheets="@../css/main.css" />
+                                <Pane fx:id="gamePlayTheGamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="gridPane" stylesheets="@../css/main.css" />
                             </children>
                         </GridPane>
                     </children>
