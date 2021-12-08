@@ -1,5 +1,6 @@
 package gr.ihu.tictactoe.controller;
 
+import com.sun.scenario.effect.Glow;
 import javafx.fxml.FXML;
 import javafx.application.Platform;
 
@@ -50,6 +51,7 @@ public class SignInController {
     private void closeWindow(MouseEvent event) {
         System.exit(0);
         Platform.exit();
+
     }
 
     public void SignInButtonOnAction(ActionEvent event) throws Exception {
