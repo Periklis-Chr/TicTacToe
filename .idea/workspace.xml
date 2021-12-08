@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45801cb3-0ac8-43ca-a7b1-55f153e8c04c" name="Changes" comment="rebuild 2 &#10;fxml_menu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="45801cb3-0ac8-43ca-a7b1-55f153e8c04c" name="Changes" comment="menu view">
       <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/menu_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/menu_view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +77,7 @@
       <workItem from="1639001296069" duration="231000" />
       <workItem from="1639001546373" duration="3000" />
       <workItem from="1639001573652" duration="857000" />
-      <workItem from="1639002470135" duration="1927000" />
+      <workItem from="1639002470135" duration="1967000" />
     </task>
     <task id="LOCAL-00001" summary="close button and minimized butoon">
       <created>1638690426742</created>
@@ -116,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639003963753</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="menu view">
+      <created>1639004431330</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639004431330</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +142,8 @@
     <MESSAGE value="close button and minimized butoon" />
     <MESSAGE value="rebuild" />
     <MESSAGE value="rebuild 2 &#10;fxml_menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="rebuild 2 &#10;fxml_menu" />
+    <MESSAGE value="menu view" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu view" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TicTacToe$MainApplication.ic" NAME="MainApplication Coverage Results" MODIFIED="1638685038396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
