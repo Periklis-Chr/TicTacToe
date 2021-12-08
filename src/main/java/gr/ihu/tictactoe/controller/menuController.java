@@ -14,8 +14,13 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.fxml.Initializable;
 
-public class menuController {
+public class menuController implements Initializable{
 
     @FXML
     private AnchorPane main_menu;
@@ -74,7 +79,13 @@ public class menuController {
 
     @FXML
     private void onClickPlay(ActionEvent event) throws IOException {
-        SceneChange.toGame();
+        
+    }
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb){
+
+        
     }
 //    public void onClickHyper(){
 //    Hyperlink link = new Hyperlink();
