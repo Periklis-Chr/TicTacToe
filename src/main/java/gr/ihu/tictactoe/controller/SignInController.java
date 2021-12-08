@@ -13,6 +13,7 @@ import javafx.scene.layout.AnchorPane;
 
 
 import java.io.IOException;
+
 import gr.ihu.tictactoe.DataBaseConnection;
 import gr.ihu.tictactoe.SceneChange;
 
@@ -38,11 +39,13 @@ public class SignInController {
     @FXML
     private AnchorPane signIn_view;
     private Stage stage = null;
+
     @FXML
     private void minimizedWindow(MouseEvent event) {
         stage = (Stage) signIn_view.getScene().getWindow();
         stage.setIconified(true);
     }
+
     @FXML
     private void closeWindow(MouseEvent event) {
         System.exit(0);
@@ -87,10 +90,9 @@ public class SignInController {
         }
     }
 
-    public void SignUpButtonOnAction(ActionEvent event) throws Exception{
-         SceneChange.toRegister();
+    public void SignUpButtonOnAction(ActionEvent event) throws Exception {
+        SceneChange.toRegister();
     }
-        
-    
-    
+
+
 }

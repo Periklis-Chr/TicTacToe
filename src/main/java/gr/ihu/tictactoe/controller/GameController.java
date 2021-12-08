@@ -3,6 +3,7 @@ package gr.ihu.tictactoe.controller;
 import gr.ihu.tictactoe.SceneChange;
 import gr.ihu.tictactoe.game.BoxQ;
 import gr.ihu.tictactoe.game.MatrixBoxes;
+
 import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,9 +24,9 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class GameController implements Initializable {
-    
+
     BoxQ boxes[][] = new BoxQ[3][3];
-    
+
     private Label label;
     @FXML
     private AnchorPane anchorPane;
@@ -39,28 +40,31 @@ public class GameController implements Initializable {
     private Text OScore;
     @FXML
     private Button backMenu;
+
     @FXML
     private void minimizedWindow(MouseEvent event) {
         Stage stage = new Stage();
         stage = (Stage) anchorPane.getScene().getWindow();
         stage.setIconified(true);
     }
+
     @FXML
     private void closeWindow(MouseEvent event) {
         System.exit(0);
         Platform.exit();
     }
-    
+
     private void boxonclick(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
     }
-    private void boxAction(){
-        
+
+    private void boxAction() {
+
     }
-    
+
     @Override
-    
+
     public void initialize(URL url, ResourceBundle rb) {
         int gap = 20;
         int startx = 0;
@@ -69,10 +73,10 @@ public class GameController implements Initializable {
         //create
         MatrixBoxes matrix;
         try {
-            matrix = new MatrixBoxes(gap,startx,starty,x);
+            matrix = new MatrixBoxes(gap, startx, starty, x);
             Group group = matrix.getGroup();
             anchorPane2.getChildren().add(group);
-            boxes =  matrix.getBoxes();
+            boxes = matrix.getBoxes();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(GameController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -82,7 +86,6 @@ public class GameController implements Initializable {
         SceneChange.toMenu();
 
     }
-    
-        
-    
+
+
 }

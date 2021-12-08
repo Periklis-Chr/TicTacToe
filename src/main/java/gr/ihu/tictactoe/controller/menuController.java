@@ -52,6 +52,7 @@ public class menuController {
         stage = (Stage) main_menu.getScene().getWindow();
         stage.setIconified(true);
     }
+
     @FXML
     private void closeWindow(MouseEvent event) {
         System.exit(0);
@@ -60,19 +61,17 @@ public class menuController {
 
     @FXML
     private void handleClicks(ActionEvent event) throws IOException {
-        if(event.getSource() == btnMainMenu){
+        if (event.getSource() == btnMainMenu) {
             mainMenuPane.toFront();
-        }
-        else if(event.getSource() == btnGame){
+        } else if (event.getSource() == btnGame) {
             gamePane.toFront();
-        }
-        else if(event.getSource() == btnDevelopers){
+        } else if (event.getSource() == btnDevelopers) {
             developersPane.toFront();
-        }
-        else if(event.getSource() == btnInformation){
+        } else if (event.getSource() == btnInformation) {
             informationPane.toFront();
         }
     }
+
     @FXML
     private void onClickPlay(ActionEvent event) throws IOException {
         SceneChange.toGame();

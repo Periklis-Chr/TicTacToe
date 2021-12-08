@@ -18,140 +18,176 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="main_menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.menuController">
+<AnchorPane id="AnchorPane" fx:id="main_menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent"
+            stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gr.ihu.tictactoe.controller.menuController">
     <children>
-        <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
+        <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
             <children>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="930.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="25.0" prefWidth="930.0">
                     <children>
-                        <Label contentDisplay="CENTER" layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="228.0" style="-fx-text-fill: #9B111E;" text="TicTacToe">
+                        <Label contentDisplay="CENTER" layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="228.0"
+                               style="-fx-text-fill: #9B111E;" text="TicTacToe">
                             <opaqueInsets>
-                                <Insets />
+                                <Insets/>
                             </opaqueInsets>
                             <font>
-                                <Font name="Engravers MT" size="16.0" />
+                                <Font name="Engravers MT" size="16.0"/>
                             </font>
                         </Label>
                     </children>
                 </AnchorPane>
-                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizedWindow" prefHeight="30.0" prefWidth="30.0" styleClass="min-btn" stylesheets="@../css/main.css">
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizedWindow" prefHeight="30.0"
+                       prefWidth="30.0" styleClass="min-btn" stylesheets="@../css/main.css">
                     <graphic>
-                        <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white" onMouseClicked="#minimizedWindow" size="1.3em" />
+                        <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white"
+                                             onMouseClicked="#minimizedWindow" size="1.3em"/>
                     </graphic>
                 </Label>
-                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeWindow" prefHeight="30.0" prefWidth="30.0" styleClass="close-btn" stylesheets="@../css/main.css">
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeWindow" prefHeight="30.0"
+                       prefWidth="30.0" styleClass="close-btn" stylesheets="@../css/main.css">
                     <graphic>
-                        <FontAwesomeIconView glyphName="CLOSE" glyphStyle="-fx-fill:white" onMouseClicked="#closeWindow" size="1.3em" />
+                        <FontAwesomeIconView glyphName="CLOSE" glyphStyle="-fx-fill:white" onMouseClicked="#closeWindow"
+                                             size="1.3em"/>
                     </graphic>
                 </Label>
             </children>
         </HBox>
-        <Pane layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="1024.0" style="-fx-background-color: #252679;">
+        <Pane layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="547.0" prefWidth="1024.0" style="-fx-background-color: #252679;">
             <children>
-                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="228.0" style="-fx-background-color: #1F182C;">
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="547.0" prefWidth="228.0" style="-fx-background-color: #1F182C;">
                     <children>
                         <Pane prefHeight="200.0" prefWidth="200.0">
-                     <children>
-                        <ImageView fitHeight="170.0" fitWidth="175.0" layoutX="29.0" layoutY="15.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/image_login.png" />
-                           </image>
-                        </ImageView>
-                     </children></Pane>
-                        <Button fx:id="btnMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Main Menu" VBox.vgrow="ALWAYS" />
-                        <Button fx:id="btnGame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Play the Game" />
-                        <Button fx:id="btnDevelopers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" text="Developers" />
-                        <Button fx:id="btnInformation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" text="Information" />
+                            <children>
+                                <ImageView fitHeight="170.0" fitWidth="175.0" layoutX="29.0" layoutY="15.0"
+                                           opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/image_login.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Button fx:id="btnMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0"
+                                prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Main Menu"
+                                VBox.vgrow="ALWAYS"/>
+                        <Button fx:id="btnGame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0"
+                                prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css"
+                                text="Play the Game"/>
+                        <Button fx:id="btnDevelopers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0"
+                                prefWidth="228.0" styleClass="btns-navi" text="Developers"/>
+                        <Button fx:id="btnInformation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0"
+                                prefWidth="228.0" styleClass="btns-navi" text="Information"/>
                     </children>
                 </VBox>
-                <StackPane layoutX="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0">
+                <StackPane layoutX="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                           minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0">
                     <children>
-                        <GridPane fx:id="informationPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane">
+                        <GridPane fx:id="developersPane" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0"
+                                  styleClass="gridPane">
                             <columnConstraints>
-                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                             </columnConstraints>
                             <rowConstraints>
-                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0"
+                                                vgrow="SOMETIMES"/>
                             </rowConstraints>
                             <children>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" styleClass="gridPane">
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="122.0" prefWidth="796.0" styleClass="gridPane">
                                     <children>
-                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="124.0" prefWidth="796.0" stylesheets="@../css/main.css" text="The Tic Tac Toe Game Story" textFill="WHITE">
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               prefHeight="124.0" prefWidth="796.0"
+                                               text="Tic Tac Toe Project Developers" textFill="WHITE">
                                             <font>
-                                                <Font name="Arial" size="20.0" />
+                                                <Font name="Arial" size="20.0"/>
                                             </font>
                                         </Label>
                                     </children>
                                 </Pane>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gridPane" GridPane.rowIndex="1">
+                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"
+                                      styleClass="gridPane" GridPane.rowIndex="1">
                                     <children>
-                                        <TextArea accessibleRole="BUTTON" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pickOnBounds="false" prefHeight="406.0" prefWidth="796.0" text="Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os (Irish English) is a paper-and-pencil game for &#10;two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in&#10; a horizontal, vertical, or diagonal row is the winner. It is a solved game, with a forced draw assuming best play from both players.&#10;&#10;Gameplay&#10;Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid.&#10;&#10;There is no universally-agreed rule as to who plays first, but in this article the convention that X plays first is used.&#10;&#10;Players soon discover that the best play from both parties leads to a draw. Hence, tic-tac-toe is often played by young children who may not&#10;have discovered the optimal strategy.&#10;&#10;Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the &#10;branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to &#10;play tic-tac-toe perfectly or to enumerate the 765 essentially different positions (the state space complexity) or the 26,830 possible games &#10;up to rotations and reflections (the game tree complexity) on this space. If played optimally by both players, &#10;the game always ends in a draw, making tic-tac-toe a futile game.&#10;&#10;&#10;Incidence structure for tic-tac-toe&#10;The game can be generalized to an m,n,k-game, in which two players alternate placing stones of their own color on an m-by-n &#10;board with the goal of getting k of their own color in a row. Tic-tac-toe is the 3,3,3-game. Harary's generalized tic-tac-toe is an even&#10;broader generalization of tic-tac-toe. It can also be generalized as an nd game, specifically one in which n equals 3 and d equals 2.&#10;It can be generalised even further by playing on an arbitrary incidence structure, where rows are lines and cells are points. &#10;Tic-tac-toe's incidence structure consists of nine points, three horizontal lines, three vertical lines, and two diagonal lines,&#10; with each line consisting of at least three points.&#10;&#10;History&#10;Games played on three-in-a-row boards can be traced back to ancient Egypt,&#10;where such game boards have been found on roofing tiles dating from around 1300 BC.&#10;&#10;An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three pebbles at a time)&#10;and instead of having any number of pieces, each player had only three; thus, they had to move them around to empty spaces to keep playing.&#10;The game's grid markings have been found chalked all over Rome. Another closely related ancient game is three men's morris which is also &#10;played on a simple grid and requires three pieces in a row to finish, and Picaria, a game of the Puebloans.&#10;&#10;The different names of the game are more recent.&#10;The first print reference to &quot;noughts and crosses&quot; (nought being an alternative word for 'zero'),&#10; the British name, appeared in 1858, in an issue of Notes and Queries.The first print reference to a game called &quot;tick-tack-toe&quot; &#10;occurred in 1884, but referred to &quot;a children's game played on a slate, consisting of trying with the eyes shut to bring the pencil &#10;down on one of the numbers of a set, the number hit being scored&quot;.[This quote needs a citation] &quot;Tic-tac-toe&quot; may also derive from &#10;&quot;tick-tack&quot;, the name of an old version of backgammon first described in 1558. The US renaming of &quot;noughts and crosses&quot; to &quot;tic-tac-toe&quot; &#10;occurred in the 20th century.&#10;&#10;In 1952, OXO (or Noughts and Crosses), developed by British computer scientist Sandy Douglas for the EDSAC computer at the &#10;University of Cambridge, became one of the first known video games. The computer player could play perfect games of tic-tac-toe &#10;against a human opponent.&#10;&#10;In 1975, tic-tac-toe was also used by MIT students to demonstrate the computational power of Tinkertoy elements. The Tinkertoy computer, &#10;made out of (almost) only Tinkertoys, is able to play tic-tac-toe perfectly. It is currently on display at the Museum of Science, Boston." />
-                                    </children>
-                                </Pane>
-                            </children>
-                        </GridPane>
-                        <GridPane fx:id="developersPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane">
-                            <columnConstraints>
-                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                            </columnConstraints>
-                            <rowConstraints>
-                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0" vgrow="SOMETIMES" />
-                            </rowConstraints>
-                            <children>
-                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="796.0" styleClass="gridPane">
-                                    <children>
-                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="124.0" prefWidth="796.0" text="Tic Tac Toe Project Developers" textFill="WHITE">
-                                            <font>
-                                                <Font name="Arial" size="20.0" />
-                                            </font>
-                                        </Label>
-                                    </children>
-                                </Pane>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gridPane" GridPane.rowIndex="1">
-                                    <children>
-                                        <HBox layoutX="223.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="355.0">
+                                        <HBox layoutX="223.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                              minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0"
+                                              prefWidth="355.0">
                                             <children>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="175.0" text="    Senior developer" textFill="WHITE">
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity"
+                                                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                       prefHeight="55.0" prefWidth="175.0" text="    Senior developer"
+                                                       textFill="WHITE">
                                                     <font>
-                                                        <Font name="Arial Bold Italic" size="14.0" />
+                                                        <Font name="Arial Bold Italic" size="14.0"/>
                                                     </font>
                                                 </Label>
-                                                <Hyperlink fx:id="link1" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="175.0" text="Karezos Athanasios">
+                                                <Hyperlink fx:id="link1" alignment="CENTER" contentDisplay="CENTER"
+                                                           maxHeight="-Infinity" maxWidth="-Infinity"
+                                                           minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0"
+                                                           prefWidth="175.0" text="Karezos Athanasios">
                                                     <font>
-                                                        <Font name="Arial Bold Italic" size="15.0" />
+                                                        <Font name="Arial Bold Italic" size="15.0"/>
                                                     </font>
                                                 </Hyperlink>
                                             </children>
                                         </HBox>
-                                        <HBox layoutX="223.0" layoutY="136.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="355.0">
+                                        <HBox layoutX="223.0" layoutY="136.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                              minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0"
+                                              prefWidth="355.0">
                                             <children>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="175.0" text="Junior developer #1" textFill="WHITE">
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity"
+                                                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                       prefHeight="55.0" prefWidth="175.0" text="Junior developer #1"
+                                                       textFill="WHITE">
                                                     <font>
-                                                        <Font name="Arial Bold Italic" size="14.0" />
+                                                        <Font name="Arial Bold Italic" size="14.0"/>
                                                     </font>
                                                 </Label>
-                                                <Hyperlink fx:id="link2" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="175.0" text="Gousios Periklis">
+                                                <Hyperlink fx:id="link2" alignment="CENTER" contentDisplay="CENTER"
+                                                           maxHeight="-Infinity" maxWidth="-Infinity"
+                                                           minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0"
+                                                           prefWidth="175.0" text="Gousios Periklis">
                                                     <font>
-                                                        <Font name="Arial Bold Italic" size="15.0" />
+                                                        <Font name="Arial Bold Italic" size="15.0"/>
                                                     </font>
                                                 </Hyperlink>
                                             </children>
                                         </HBox>
-                                        <HBox layoutX="223.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="355.0">
+                                        <HBox layoutX="223.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                              minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0"
+                                              prefWidth="355.0">
                                             <children>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="175.0" text="Junior developer #2" textFill="WHITE">
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity"
+                                                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                       prefHeight="55.0" prefWidth="175.0" text="Junior developer #2"
+                                                       textFill="WHITE">
                                                     <font>
-                                                        <Font name="Arial Bold Italic" size="14.0" />
+                                                        <Font name="Arial Bold Italic" size="14.0"/>
                                                     </font>
                                                 </Label>
-                                                <Hyperlink fx:id="link3" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="175.0" text="Kyriakidis Dimitrios">
+                                                <Hyperlink fx:id="link3" alignment="CENTER" contentDisplay="CENTER"
+                                                           maxHeight="-Infinity" maxWidth="-Infinity"
+                                                           minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0"
+                                                           prefWidth="175.0" text="Kyriakidis Dimitrios">
                                                     <font>
-                                                        <Font name="Arial Bold Italic" size="15.0" />
+                                                        <Font name="Arial Bold Italic" size="15.0"/>
                                                     </font>
                                                 </Hyperlink>
                                             </children>
@@ -160,55 +196,119 @@
                                 </Pane>
                             </children>
                         </GridPane>
-                        <GridPane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane" stylesheets="@../css/main.css">
+                        <GridPane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                  minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane"
+                                  stylesheets="@../css/main.css">
                             <columnConstraints>
-                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                             </columnConstraints>
                             <rowConstraints>
-                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0"
+                                                vgrow="SOMETIMES"/>
                             </rowConstraints>
                             <children>
-                                <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="796.0" styleClass="gridPane" stylesheets="@../css/main.css">
+                                <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="796.0"
+                                      styleClass="gridPane" stylesheets="@../css/main.css">
                                     <children>
-                                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="124.0" prefWidth="796.0" styleClass="gridPane" text="Tic Tac Toe Game" textFill="WHITE">
+                                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefHeight="124.0" prefWidth="796.0" styleClass="gridPane"
+                                               text="Tic Tac Toe Game" textFill="WHITE">
                                             <font>
-                                                <Font name="Arial Bold" size="20.0" />
+                                                <Font name="Arial Bold" size="20.0"/>
                                             </font>
                                         </Label>
                                     </children>
                                 </Pane>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gridPane" GridPane.rowIndex="1">
+                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"
+                                      styleClass="gridPane" GridPane.rowIndex="1">
                                     <children>
-                                        <AnchorPane layoutX="298.0" layoutY="107.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
-                                 <children>
-                                    <Button fx:id="btnPlay" layoutX="63.0" layoutY="84.0" mnemonicParsing="false" onAction="#onClickPlay" styleClass="btns-navi" stylesheets="@../css/main.css" text="CLICK" />
-                                 </children></AnchorPane>
+                                        <AnchorPane layoutX="298.0" layoutY="107.0" prefHeight="200.0" prefWidth="200.0"
+                                                    style="-fx-background-color: white;">
+                                            <children>
+                                                <Button fx:id="btnPlay" layoutX="63.0" layoutY="84.0"
+                                                        mnemonicParsing="false" onAction="#onClickPlay"
+                                                        styleClass="btns-navi" stylesheets="@../css/main.css"
+                                                        text="CLICK"/>
+                                            </children>
+                                        </AnchorPane>
                                     </children>
                                 </Pane>
                             </children>
                         </GridPane>
-                        <GridPane fx:id="mainMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane">
+                        <GridPane fx:id="mainMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                  minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane">
                             <columnConstraints>
-                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                             </columnConstraints>
                             <rowConstraints>
-                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0"
+                                                vgrow="SOMETIMES"/>
                             </rowConstraints>
                             <children>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="116.0" prefWidth="796.0" styleClass="gridPane">
+                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="116.0" prefWidth="796.0"
+                                      styleClass="gridPane">
                                     <children>
-                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="124.0" prefWidth="796.0" text="The Tic Tac Toe Rules" textFill="WHITE">
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               prefHeight="124.0" prefWidth="796.0" text="The Tic Tac Toe Rules"
+                                               textFill="WHITE">
                                             <font>
-                                                <Font name="Arial" size="20.0" />
+                                                <Font name="Arial" size="20.0"/>
                                             </font>
                                         </Label>
                                     </children>
                                 </Pane>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gridPane" GridPane.rowIndex="1">
+                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"
+                                      styleClass="gridPane" GridPane.rowIndex="1">
                                     <children>
-                                        <TextArea accessibleRole="BUTTON" layoutX="86.0" layoutY="121.0" pickOnBounds="false" prefHeight="185.0" prefWidth="625.0" text="&#9;&#10;1. The game is played on a grid that's 3 squares by 3 squares.&#10;&#10;2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.&#10;&#10;3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.&#10;&#10;4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie." />
+                                        <TextArea accessibleRole="BUTTON" editable="false" layoutX="93.0"
+                                                  layoutY="121.0" pickOnBounds="false" prefHeight="185.0"
+                                                  prefWidth="625.0"
+                                                  text="&#9;&#10;1. The game is played on a grid that's 3 squares by 3 squares.&#10;&#10;2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.&#10;&#10;3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.&#10;&#10;4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie."/>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </GridPane>
+                        <GridPane fx:id="informationPane" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0"
+                                  styleClass="gridPane">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0"
+                                                vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <children>
+                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0"
+                                      styleClass="gridPane">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               prefHeight="124.0" prefWidth="796.0" stylesheets="@../css/main.css"
+                                               text="The Tic Tac Toe Game Story" textFill="WHITE">
+                                            <font>
+                                                <Font name="Arial" size="20.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"
+                                      styleClass="gridPane" GridPane.rowIndex="1">
+                                    <children>
+                                        <TextArea accessibleRole="BUTTON" editable="false"
+                                                  maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                                  pickOnBounds="false" prefHeight="406.0" prefWidth="796.0"
+                                                  text="Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os (Irish English) is a paper-and-pencil game for &#10;two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in&#10; a horizontal, vertical, or diagonal row is the winner. It is a solved game, with a forced draw assuming best play from both players.&#10;&#10;Gameplay&#10;Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid.&#10;&#10;There is no universally-agreed rule as to who plays first, but in this article the convention that X plays first is used.&#10;&#10;Players soon discover that the best play from both parties leads to a draw. Hence, tic-tac-toe is often played by young children who may not&#10;have discovered the optimal strategy.&#10;&#10;Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the &#10;branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to &#10;play tic-tac-toe perfectly or to enumerate the 765 essentially different positions (the state space complexity) or the 26,830 possible games &#10;up to rotations and reflections (the game tree complexity) on this space. If played optimally by both players, &#10;the game always ends in a draw, making tic-tac-toe a futile game.&#10;&#10;&#10;Incidence structure for tic-tac-toe&#10;The game can be generalized to an m,n,k-game, in which two players alternate placing stones of their own color on an m-by-n &#10;board with the goal of getting k of their own color in a row. Tic-tac-toe is the 3,3,3-game. Harary's generalized tic-tac-toe is an even&#10;broader generalization of tic-tac-toe. It can also be generalized as an nd game, specifically one in which n equals 3 and d equals 2.&#10;It can be generalised even further by playing on an arbitrary incidence structure, where rows are lines and cells are points. &#10;Tic-tac-toe's incidence structure consists of nine points, three horizontal lines, three vertical lines, and two diagonal lines,&#10; with each line consisting of at least three points.&#10;&#10;History&#10;Games played on three-in-a-row boards can be traced back to ancient Egypt,&#10;where such game boards have been found on roofing tiles dating from around 1300 BC.&#10;&#10;An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three pebbles at a time)&#10;and instead of having any number of pieces, each player had only three; thus, they had to move them around to empty spaces to keep playing.&#10;The game's grid markings have been found chalked all over Rome. Another closely related ancient game is three men's morris which is also &#10;played on a simple grid and requires three pieces in a row to finish, and Picaria, a game of the Puebloans.&#10;&#10;The different names of the game are more recent.&#10;The first print reference to &quot;noughts and crosses&quot; (nought being an alternative word for 'zero'),&#10; the British name, appeared in 1858, in an issue of Notes and Queries.The first print reference to a game called &quot;tick-tack-toe&quot; &#10;occurred in 1884, but referred to &quot;a children's game played on a slate, consisting of trying with the eyes shut to bring the pencil &#10;down on one of the numbers of a set, the number hit being scored&quot;.[This quote needs a citation] &quot;Tic-tac-toe&quot; may also derive from &#10;&quot;tick-tack&quot;, the name of an old version of backgammon first described in 1558. The US renaming of &quot;noughts and crosses&quot; to &quot;tic-tac-toe&quot; &#10;occurred in the 20th century.&#10;&#10;In 1952, OXO (or Noughts and Crosses), developed by British computer scientist Sandy Douglas for the EDSAC computer at the &#10;University of Cambridge, became one of the first known video games. The computer player could play perfect games of tic-tac-toe &#10;against a human opponent.&#10;&#10;In 1975, tic-tac-toe was also used by MIT students to demonstrate the computational power of Tinkertoy elements. The Tinkertoy computer, &#10;made out of (almost) only Tinkertoys, is able to play tic-tac-toe perfectly. It is currently on display at the Museum of Science, Boston."/>
                                     </children>
                                 </Pane>
                             </children>

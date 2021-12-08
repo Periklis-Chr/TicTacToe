@@ -14,92 +14,130 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="signIn_view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.SignInController">
+<AnchorPane id="AnchorPane" fx:id="signIn_view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent"
+            stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gr.ihu.tictactoe.controller.SignInController">
     <children>
-        <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
+        <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
             <children>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="930.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="25.0" prefWidth="930.0">
                     <children>
-                        <Label contentDisplay="CENTER" layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="228.0" style="-fx-text-fill: #9B111E;" text="TicTacToe">
+                        <Label contentDisplay="CENTER" layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="228.0"
+                               style="-fx-text-fill: #9B111E;" text="TicTacToe">
                             <opaqueInsets>
-                                <Insets />
+                                <Insets/>
                             </opaqueInsets>
                             <font>
-                                <Font name="Engravers MT" size="16.0" />
+                                <Font name="Engravers MT" size="16.0"/>
                             </font>
                         </Label>
                     </children>
                 </AnchorPane>
-                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizedWindow" prefHeight="30.0" prefWidth="30.0" styleClass="min-btn" stylesheets="@../css/main.css">
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizedWindow" prefHeight="30.0"
+                       prefWidth="30.0" styleClass="min-btn" stylesheets="@../css/main.css">
                     <graphic>
-                        <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white" onMouseClicked="#minimizedWindow" size="1.3em" />
+                        <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white"
+                                             onMouseClicked="#minimizedWindow" size="1.3em"/>
                     </graphic>
                 </Label>
-                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeWindow" prefHeight="30.0" prefWidth="30.0" styleClass="close-btn" stylesheets="@../css/main.css">
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeWindow" prefHeight="30.0"
+                       prefWidth="30.0" styleClass="close-btn" stylesheets="@../css/main.css">
                     <graphic>
-                        <FontAwesomeIconView glyphName="CLOSE" glyphStyle="-fx-fill:white" onMouseClicked="#closeWindow" size="1.3em" />
+                        <FontAwesomeIconView glyphName="CLOSE" glyphStyle="-fx-fill:white" onMouseClicked="#closeWindow"
+                                             size="1.3em"/>
                     </graphic>
                 </Label>
             </children>
         </HBox>
-        <AnchorPane layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="445.0" style="-fx-background-color: #1F182C;">
+        <AnchorPane layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="545.0" prefWidth="445.0" style="-fx-background-color: #1F182C;">
             <children>
-                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="388.0" text="Tic Tac Toe" textFill="WHITE">
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="14.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0"
+                       prefWidth="388.0" text="Tic Tac Toe" textFill="WHITE">
                     <font>
-                        <Font name="Arial Black" size="25.0" />
+                        <Font name="Arial Black" size="25.0"/>
                     </font>
                 </Label>
-                <ImageView fx:id="loginImageView" fitHeight="228.0" fitWidth="242.0" layoutX="109.0" layoutY="159.0" nodeOrientation="INHERIT" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="loginImageView" fitHeight="228.0" fitWidth="242.0" layoutX="109.0" layoutY="159.0"
+                           nodeOrientation="INHERIT" opacity="0.5" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../image/image_login.png" />
+                        <Image url="@../image/image_login.png"/>
                     </image>
-               <cursor>
-                  <Cursor fx:constant="WAIT" />
-               </cursor>
+                    <cursor>
+                        <Cursor fx:constant="WAIT"/>
+                    </cursor>
                 </ImageView>
-            </children></AnchorPane>
-        <AnchorPane layoutX="444.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="580.0" style="-fx-background-color: #252679;">
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="444.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                    minWidth="-Infinity" prefHeight="545.0" prefWidth="580.0" style="-fx-background-color: #252679;">
             <children>
-                <TextField fx:id="UserNameTextField" layoutX="166.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" promptText="Username/Email" style="-fx-background-color: white;">
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor></TextField>
-                <PasswordField fx:id="PasswordField" layoutX="167.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" promptText="Password" style="-fx-background-color: white;">
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor></PasswordField>
-                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="207.0" layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="166.0" text="Sign In" textFill="WHITE">
+                <TextField fx:id="UserNameTextField" layoutX="166.0" layoutY="160.0" maxHeight="-Infinity"
+                           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0"
+                           prefWidth="250.0" promptText="Username/Email" style="-fx-background-color: white;">
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </TextField>
+                <PasswordField fx:id="PasswordField" layoutX="167.0" layoutY="228.0" maxHeight="-Infinity"
+                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0"
+                               prefWidth="250.0" promptText="Password" style="-fx-background-color: white;">
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </PasswordField>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="207.0" layoutY="39.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0"
+                       prefWidth="166.0" text="Sign In" textFill="WHITE">
                     <font>
-                        <Font name="Arial" size="30.0" />
+                        <Font name="Arial" size="30.0"/>
                     </font>
                 </Label>
-            <Button fx:id="SignInButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SignInButtonOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign In " textFill="WHITE">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="SignUpButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="303.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SignUpButtonOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign Up" textFill="WHITE">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <Glow level="0.36" />
-               </effect>
-            </Button>
-            <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="580.0" textFill="RED">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            </children></AnchorPane>
+                <Button fx:id="SignInButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0"
+                        layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onAction="#SignInButtonOnAction" prefHeight="35.0"
+                        prefWidth="110.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign In "
+                        textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Button>
+                <Button fx:id="SignUpButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="303.0"
+                        layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onAction="#SignUpButtonOnAction" prefHeight="35.0"
+                        prefWidth="110.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign Up"
+                        textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                    <effect>
+                        <Glow level="0.36"/>
+                    </effect>
+                </Button>
+                <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="292.0"
+                       maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                       prefHeight="45.0" prefWidth="580.0" textFill="RED">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
     </children>
 </AnchorPane>

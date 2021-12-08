@@ -14,221 +14,272 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="signUp_view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.SignUpController">
+<AnchorPane id="AnchorPane" fx:id="signUp_view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent"
+            stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gr.ihu.tictactoe.controller.SignUpController">
     <children>
-        <HBox id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
+        <HBox id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
             <padding>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
             <children>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="930.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="25.0" prefWidth="930.0">
                     <children>
-                        <Label contentDisplay="CENTER" layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="228.0" style="-fx-text-fill: #9B111E;" text="TicTacToe">
+                        <Label contentDisplay="CENTER" layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="228.0"
+                               style="-fx-text-fill: #9B111E;" text="TicTacToe">
                             <opaqueInsets>
-                                <Insets />
+                                <Insets/>
                             </opaqueInsets>
                             <font>
-                                <Font name="Engravers MT" size="16.0" />
+                                <Font name="Engravers MT" size="16.0"/>
                             </font>
                         </Label>
                     </children>
                 </AnchorPane>
-                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizedWindow" prefHeight="30.0" prefWidth="30.0" styleClass="min-btn" stylesheets="@../css/main.css">
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizedWindow" prefHeight="30.0"
+                       prefWidth="30.0" styleClass="min-btn" stylesheets="@../css/main.css">
                     <graphic>
-                        <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white" onMouseClicked="#minimizedWindow" size="1.3em" />
+                        <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white"
+                                             onMouseClicked="#minimizedWindow" size="1.3em"/>
                     </graphic>
                 </Label>
-                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeWindow" prefHeight="30.0" prefWidth="30.0" styleClass="close-btn" stylesheets="@../css/main.css">
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeWindow" prefHeight="30.0"
+                       prefWidth="30.0" styleClass="close-btn" stylesheets="@../css/main.css">
                     <graphic>
-                        <FontAwesomeIconView glyphName="CLOSE" glyphStyle="-fx-fill:white" onMouseClicked="#closeWindow" size="1.3em" />
+                        <FontAwesomeIconView glyphName="CLOSE" glyphStyle="-fx-fill:white" onMouseClicked="#closeWindow"
+                                             size="1.3em"/>
                     </graphic>
                 </Label>
             </children>
         </HBox>
-        <AnchorPane layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="378.0" style="-fx-background-color: #1F182C;">
+        <AnchorPane layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="545.0" prefWidth="378.0" style="-fx-background-color: #1F182C;">
             <children>
-                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="388.0" text="Tic Tac Toe" textFill="WHITE">
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="388.0"
+                       text="Tic Tac Toe" textFill="WHITE">
                     <font>
-                        <Font name="Arial Black" size="25.0" />
+                        <Font name="Arial Black" size="25.0"/>
                     </font>
                 </Label>
-                <ImageView fx:id="registerImageView" fitHeight="228.0" fitWidth="250.0" layoutX="75.0" layoutY="159.0" nodeOrientation="INHERIT" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="registerImageView" fitHeight="228.0" fitWidth="250.0" layoutX="75.0" layoutY="159.0"
+                           nodeOrientation="INHERIT" opacity="0.5" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../image/image_login.png" />
+                        <Image url="@../image/image_login.png"/>
                     </image>
-               <effect>
-                  <Glow level="1.0" />
-               </effect>
+                    <effect>
+                        <Glow level="1.0"/>
+                    </effect>
                 </ImageView>
-            </children></AnchorPane>
-        <AnchorPane layoutX="377.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="647.0" style="-fx-background-color: #252679;">
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="377.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                    minWidth="-Infinity" prefHeight="545.0" prefWidth="647.0" style="-fx-background-color: #252679;">
             <children>
-                <Button fx:id="RegisterButton" alignment="CENTER" contentDisplay="CENTER" layoutX="168.0" layoutY="471.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RegisterButtonOnAction" prefHeight="35.0" prefWidth="312.0" style="-fx-background-color: #364995;" text="Register" textFill="WHITE">
+                <Button fx:id="RegisterButton" alignment="CENTER" contentDisplay="CENTER" layoutX="168.0"
+                        layoutY="471.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onAction="#RegisterButtonOnAction"
+                        prefHeight="35.0" prefWidth="312.0" style="-fx-background-color: #364995;" text="Register"
+                        textFill="WHITE">
                     <font>
-                        <Font name="Arial Bold" size="14.0" />
+                        <Font name="Arial Bold" size="14.0"/>
                     </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
                 </Button>
-                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="446.0" text="User Registation" textFill="WHITE">
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0"
+                       prefWidth="446.0" text="User Registation" textFill="WHITE">
                     <font>
-                        <Font name="Arial" size="30.0" />
+                        <Font name="Arial" size="30.0"/>
                     </font>
                 </Label>
-            <TextField fx:id="setFirstName" layoutX="55.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#clearbox" prefHeight="35.0" prefWidth="250.0" promptText="First Name" style="-fx-background-color: white;">
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor>
-            </TextField>
-            <TextField fx:id="setLastName" layoutX="342.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" style="-fx-background-color: white;">
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor>
-            </TextField>
-                <TextField fx:id="setEmail" layoutX="55.0" layoutY="198.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Email" style="-fx-background-color: white;">
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor></TextField>
-            <TextField fx:id="setUserName" layoutX="55.0" layoutY="263.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="User Name" style="-fx-background-color: white;">
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor>
-            </TextField>
-                <PasswordField fx:id="setPassword" layoutX="55.0" layoutY="328.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Password" style="-fx-background-color: white;">
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor></PasswordField>
-            <PasswordField fx:id="setConfirmPassword" layoutX="54.0" layoutY="393.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Confirm Password" style="-fx-background-color: white;">
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor>
-            </PasswordField>
-            <Label layoutX="55.0" layoutY="107.0" prefHeight="30.0" prefWidth="95.0" text="First Name" textFill="WHITE">
-               <font>
-                  <Font size="17.0" />
-               </font>
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="WAIT" />
-               </cursor>
-            </Label>
-            <Label layoutX="55.0" layoutY="298.0" prefHeight="30.0" prefWidth="95.0" text="Password" textFill="WHITE">
-               <font>
-                  <Font size="17.0" />
-               </font>
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="WAIT" />
-               </cursor>
-            </Label>
-            <Label layoutX="54.0" layoutY="233.0" prefHeight="30.0" prefWidth="95.0" text="User Name" textFill="WHITE">
-               <font>
-                  <Font size="17.0" />
-               </font>
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="WAIT" />
-               </cursor>
-            </Label>
-            <Label layoutX="55.0" layoutY="172.0" prefHeight="30.0" prefWidth="95.0" text="Email" textFill="WHITE">
-               <font>
-                  <Font size="17.0" />
-               </font>
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="WAIT" />
-               </cursor>
-            </Label>
-            <Label layoutX="342.0" layoutY="107.0" prefHeight="30.0" prefWidth="95.0" text="Last Name" textFill="WHITE">
-               <font>
-                  <Font size="17.0" />
-               </font>
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="WAIT" />
-               </cursor>
-            </Label>
-            <Label layoutX="55.0" layoutY="363.0" prefHeight="30.0" prefWidth="153.0" text="Confirm Password" textFill="WHITE">
-               <font>
-                  <Font size="17.0" />
-               </font>
-               <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-               </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="WAIT" />
-               </cursor>
-            </Label>
-                <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="580.0" textFill="RED">
+                <TextField fx:id="setFirstName" layoutX="55.0" layoutY="137.0" maxHeight="-Infinity"
+                           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#clearbox"
+                           prefHeight="35.0" prefWidth="250.0" promptText="First Name"
+                           style="-fx-background-color: white;">
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </TextField>
+                <TextField fx:id="setLastName" layoutX="342.0" layoutY="137.0" maxHeight="-Infinity"
+                           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox"
+                           prefHeight="35.0" prefWidth="250.0" promptText="Last Name"
+                           style="-fx-background-color: white;">
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </TextField>
+                <TextField fx:id="setEmail" layoutX="55.0" layoutY="198.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                           minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0"
+                           prefWidth="538.0" promptText="Email" style="-fx-background-color: white;">
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </TextField>
+                <TextField fx:id="setUserName" layoutX="55.0" layoutY="263.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                           minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0"
+                           prefWidth="538.0" promptText="User Name" style="-fx-background-color: white;">
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </TextField>
+                <PasswordField fx:id="setPassword" layoutX="55.0" layoutY="328.0" maxHeight="-Infinity"
+                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Password"
+                               style="-fx-background-color: white;">
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </PasswordField>
+                <PasswordField fx:id="setConfirmPassword" layoutX="54.0" layoutY="393.0" maxHeight="-Infinity"
+                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0"
+                               promptText="Confirm Password" style="-fx-background-color: white;">
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </PasswordField>
+                <Label layoutX="55.0" layoutY="107.0" prefHeight="30.0" prefWidth="95.0" text="First Name"
+                       textFill="WHITE">
                     <font>
-                        <Font size="15.0" />
+                        <Font size="17.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="WAIT"/>
+                    </cursor>
+                </Label>
+                <Label layoutX="55.0" layoutY="298.0" prefHeight="30.0" prefWidth="95.0" text="Password"
+                       textFill="WHITE">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="WAIT"/>
+                    </cursor>
+                </Label>
+                <Label layoutX="54.0" layoutY="233.0" prefHeight="30.0" prefWidth="95.0" text="User Name"
+                       textFill="WHITE">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="WAIT"/>
+                    </cursor>
+                </Label>
+                <Label layoutX="55.0" layoutY="172.0" prefHeight="30.0" prefWidth="95.0" text="Email" textFill="WHITE">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="WAIT"/>
+                    </cursor>
+                </Label>
+                <Label layoutX="342.0" layoutY="107.0" prefHeight="30.0" prefWidth="95.0" text="Last Name"
+                       textFill="WHITE">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="WAIT"/>
+                    </cursor>
+                </Label>
+                <Label layoutX="55.0" layoutY="363.0" prefHeight="30.0" prefWidth="153.0" text="Confirm Password"
+                       textFill="WHITE">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="WAIT"/>
+                    </cursor>
+                </Label>
+                <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="60.0"
+                       maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                       prefHeight="45.0" prefWidth="580.0" textFill="RED">
+                    <font>
+                        <Font size="15.0"/>
                     </font>
                 </Label>
-            </children></AnchorPane>
+            </children>
+        </AnchorPane>
     </children>
 </AnchorPane>

@@ -1,4 +1,3 @@
-
 module gr.ihu.tictactoe {
     requires javafx.controls;
     requires javafx.fxml;

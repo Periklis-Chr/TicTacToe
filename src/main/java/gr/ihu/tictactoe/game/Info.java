@@ -6,7 +6,6 @@
 package gr.ihu.tictactoe.game;
 
 /**
- *
  * @author User
  */
 public class Info {
@@ -14,5 +13,5 @@ public class Info {
     public static String won;
     public static int scoreX = 0;
     public static int scoreO = 0;
-    
+
 }

@@ -6,24 +6,24 @@
 package gr.ihu.tictactoe.game;
 
 import java.io.IOException;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
 /**
- *
  * @author User
  */
-public class rootCreate{
+public class rootCreate {
     Parent root;
-    rootCreate(String res) throws IOException{
-        root = FXMLLoader.load(getClass().getResource(res));  
-        
+
+    rootCreate(String res) throws IOException {
+        root = FXMLLoader.load(getClass().getResource(res));
+
     }
-    public Parent getRoot(){
+
+    public Parent getRoot() {
         return root;
     }
-    
-        
-        
-    
+
+
 }

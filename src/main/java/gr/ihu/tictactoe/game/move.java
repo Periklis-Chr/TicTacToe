@@ -16,45 +16,42 @@ import javafx.scene.transform.Rotate;
 import javafx.util.Duration;
 
 /**
- *
  * @author User
  */
 public class move {
     static SequentialTransition seq;
     static RotateTransition rtS;
-    public static void doMove(BoxQ boxS,BoxQ[][] boxes){
-        
+
+    public static void doMove(BoxQ boxS, BoxQ[][] boxes) {
+
         RotateTransition rt = new RotateTransition(Duration.millis(1000), boxS);
         rtS = rt;
         try {
             System.out.println(rtS.getStatus());
-            if(seq.getStatus().equals(Status.RUNNING)|| rtS.getStatus().equals((Status.RUNNING))){
+            if (seq.getStatus().equals(Status.RUNNING) || rtS.getStatus().equals((Status.RUNNING))) {
                 return;
             }
 
         } catch (Exception ex) {
         }
-        
-        if(boxS.getState().equals(" ") && Info.turn.equals("X")){
+
+        if (boxS.getState().equals(" ") && Info.turn.equals("X")) {
             boxS.setState("X");
-            if(hasWon(boxes)){
-                endGame(boxes,boxS);
-                
-            }
-            else{
+            if (hasWon(boxes)) {
+                endGame(boxes, boxS);
+
+            } else {
                 rt.setAxis(Rotate.X_AXIS);
                 rt.setByAngle(90);
                 rt.play();
                 Info.turn = "O";
             }
-        }
-        else if(boxS.getState().equals(" ") && Info.turn.equals("O")){
+        } else if (boxS.getState().equals(" ") && Info.turn.equals("O")) {
             boxS.setState("O");
-            if(hasWon(boxes)){
-                endGame(boxes,boxS);
-                
-            }
-            else{
+            if (hasWon(boxes)) {
+                endGame(boxes, boxS);
+
+            } else {
                 rt.setAxis(Rotate.X_AXIS);
                 rt.setByAngle(-90);
                 rt.play();
@@ -62,111 +59,109 @@ public class move {
             }
         }
     }
-    public static void endGame(BoxQ boxes[][],BoxQ boxS){
+
+    public static void endGame(BoxQ boxes[][], BoxQ boxS) {
         score();
         RotateTransition rtB = new RotateTransition(Duration.millis(1000), boxS);
         rtB.setAxis(Rotate.X_AXIS);
-        if(boxS.getState().equals("X")){
+        if (boxS.getState().equals("X")) {
             rtB.setByAngle(90);
-        }
-        else{
+        } else {
             rtB.setByAngle(-90);
         }
         ParallelTransition p = new ParallelTransition();
 
-        SequentialTransition s = new SequentialTransition(rtB,p);
+        SequentialTransition s = new SequentialTransition(rtB, p);
         seq = s;
-        
-         for (int i=0;i<boxes.length;i++){
-                for (int j=0;j<boxes[i].length;j++){
-                    RotateTransition rt = new RotateTransition(Duration.millis(1000), boxes[i][j]);
-                    p.getChildren().add(rt);
-                    
-                    
-                        if(boxes[i][j].getState().equals("X")){
-                            boxes[i][j].setState(" ");
-                            rt.setAxis(Rotate.X_AXIS);
-                            rt.setByAngle(-90);
-                            
-                        }
-                        else if(boxes[i][j].getState().equals("O")){
-                            boxes[i][j].setState(" ");
-                            rt.setAxis(Rotate.X_AXIS);
-                            rt.setByAngle(90);
-                        }
 
+        for (int i = 0; i < boxes.length; i++) {
+            for (int j = 0; j < boxes[i].length; j++) {
+                RotateTransition rt = new RotateTransition(Duration.millis(1000), boxes[i][j]);
+                p.getChildren().add(rt);
+
+
+                if (boxes[i][j].getState().equals("X")) {
+                    boxes[i][j].setState(" ");
+                    rt.setAxis(Rotate.X_AXIS);
+                    rt.setByAngle(-90);
+
+                } else if (boxes[i][j].getState().equals("O")) {
+                    boxes[i][j].setState(" ");
+                    rt.setAxis(Rotate.X_AXIS);
+                    rt.setByAngle(90);
                 }
 
             }
+
+        }
         s.play();
-        
-        
-        
+
+
     }
-    public static boolean hasWon(BoxQ boxes[][]){
+
+    public static boolean hasWon(BoxQ boxes[][]) {
         boolean X1 = boxes[0][0].getState().equals(boxes[1][1].getState()) && boxes[0][0].getState().equals(boxes[2][2].getState()) && !boxes[0][0].getState().equals(" ");
         boolean X2 = boxes[0][2].getState().equals(boxes[1][1].getState()) && boxes[0][2].getState().equals(boxes[2][0].getState()) && !boxes[0][2].getState().equals(" ");
-        for (int i = 0; i<3; i++){
-            boolean row = 
-                boxes[i][0].getState().equals(boxes[i][1].getState()) && boxes[i][0].getState().equals(boxes[i][2].getState()) && !boxes[i][0].getState().equals(" ");
-            boolean collumn = 
-                boxes[0][i].getState().equals(boxes[1][i].getState()) && boxes[0][i].getState().equals(boxes[2][i].getState()) && !boxes[0][i].getState().equals(" ");
-            
-            if(row){
+        for (int i = 0; i < 3; i++) {
+            boolean row =
+                    boxes[i][0].getState().equals(boxes[i][1].getState()) && boxes[i][0].getState().equals(boxes[i][2].getState()) && !boxes[i][0].getState().equals(" ");
+            boolean collumn =
+                    boxes[0][i].getState().equals(boxes[1][i].getState()) && boxes[0][i].getState().equals(boxes[2][i].getState()) && !boxes[0][i].getState().equals(" ");
+
+            if (row) {
                 playerWon(boxes[i][0].getState());
                 return true;
-            
-            }
-            else if(collumn){
+
+            } else if (collumn) {
                 playerWon(boxes[0][i].getState());
                 return true;
-                
+
             }
 
-        
+
         }
-        
-        if(X1){
-                playerWon(boxes[0][0].getState());
-                return true;
-        }    
-        else if(X2){
-                playerWon(boxes[0][2].getState());
-                return true;
-                
+
+        if (X1) {
+            playerWon(boxes[0][0].getState());
+            return true;
+        } else if (X2) {
+            playerWon(boxes[0][2].getState());
+            return true;
+
         }
-        
-        
-        for (int i = 0; i<3; i++){
-            for(int j=0;j<3;j++){
-                if(boxes[i][j].getState().equals(" ")){
+
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (boxes[i][j].getState().equals(" ")) {
                     return false;
-                    
+
                 }
             }
-            
+
         }
         System.out.println("NONE won");
         Info.won = "NONE";
         return true;
 
     }
-    public static void score(){
+
+    public static void score() {
         Scene scene = MainApplication.StageS.getScene();
         Text scoreX = (Text) scene.lookup("#XScore");
         scoreX.setText(String.valueOf(Info.scoreX));
         Text scoreO = (Text) scene.lookup("#OScore");
         scoreO.setText(String.valueOf(Info.scoreO));
     }
-    public static void playerWon(String Won){
-        if(Won.equals("X")){
+
+    public static void playerWon(String Won) {
+        if (Won.equals("X")) {
             System.out.println("X won");
             Info.scoreX++;
             Info.won = "X";
             Info.turn = "O";
-                    
-        }
-        else if(Won.equals("O")){
+
+        } else if (Won.equals("O")) {
             System.out.println("O won");
             Info.scoreO++;
             Info.won = "O";

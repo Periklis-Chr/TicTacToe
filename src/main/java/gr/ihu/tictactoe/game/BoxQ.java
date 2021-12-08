@@ -9,19 +9,20 @@ package gr.ihu.tictactoe.game;
 import org.fxyz3d.shapes.primitives.CuboidMesh;
 
 /**
- *
  * @author User
  */
 public class BoxQ extends CuboidMesh {
     private String state = " ";
-    
-    BoxQ(float w,float h,float d){
+
+    BoxQ(float w, float h, float d) {
         super(w, h, d);
     }
-    public void setState(String s){
-        state= s;
+
+    public void setState(String s) {
+        state = s;
     }
-    public String getState(){
+
+    public String getState() {
         return state;
     }
 }
