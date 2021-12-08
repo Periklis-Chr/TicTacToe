@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45801cb3-0ac8-43ca-a7b1-55f153e8c04c" name="Changes" comment="close button and minimized butoon">
-      <change beforePath="$PROJECT_DIR$/.idea/TicTacToe.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbactions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/DataBaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/SceneChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/SceneChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/ScenesSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/ScenesSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/menuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/menuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/BoxQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/BoxQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/MatrixBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/MatrixBoxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/Texture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/rootCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/rootCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/rootCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/rootCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/Game_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/Game_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/menu_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/menu_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/signin_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/signin_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/signup_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/signup_view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="45801cb3-0ac8-43ca-a7b1-55f153e8c04c" name="Changes" comment="rebuild" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +74,7 @@
       <workItem from="1639001073955" duration="126000" />
       <workItem from="1639001296069" duration="231000" />
       <workItem from="1639001546373" duration="3000" />
-      <workItem from="1639001573652" duration="301000" />
+      <workItem from="1639001573652" duration="441000" />
     </task>
     <task id="LOCAL-00001" summary="close button and minimized butoon">
       <created>1638690426742</created>
@@ -116,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638690655539</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rebuild">
+      <created>1639001986858</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639001986858</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +116,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="close button and minimized butoon" />
-    <option name="LAST_COMMIT_MESSAGE" value="close button and minimized butoon" />
+    <MESSAGE value="rebuild" />
+    <option name="LAST_COMMIT_MESSAGE" value="rebuild" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TicTacToe$MainApplication.ic" NAME="MainApplication Coverage Results" MODIFIED="1638685038396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
