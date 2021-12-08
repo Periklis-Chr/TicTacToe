@@ -51,7 +51,6 @@ public class SignInController {
     private void closeWindow(MouseEvent event) {
         System.exit(0);
         Platform.exit();
-
     }
 
     public void SignInButtonOnAction(ActionEvent event) throws Exception {
@@ -80,7 +79,7 @@ public class SignInController {
                 if (queryResult.getInt(1) == 1) {
                     //game
                     messageLabel.setStyle("-fx-text-fill: green");
-                    messageLabel.setText("Congratsulation!");
+                    messageLabel.setText("Congratulations!");
                 } else {
                     messageLabel.setText("Invalid login. Please try again !");
                 }
@@ -92,8 +91,10 @@ public class SignInController {
         }
     }
 
+
     public void SignUpButtonOnAction(ActionEvent event) throws Exception {
         SceneChange.toRegister();
+
     }
 
 
