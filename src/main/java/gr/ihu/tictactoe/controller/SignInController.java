@@ -1,6 +1,5 @@
 package gr.ihu.tictactoe.controller;
 
-import com.sun.scenario.effect.Glow;
 import javafx.fxml.FXML;
 import javafx.application.Platform;
 
@@ -13,7 +12,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 
-import java.io.IOException;
 
 import gr.ihu.tictactoe.DataBaseConnection;
 import gr.ihu.tictactoe.SceneChange;

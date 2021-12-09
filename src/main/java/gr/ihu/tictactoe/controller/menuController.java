@@ -1,7 +1,6 @@
 package gr.ihu.tictactoe.controller;
 
 import gr.ihu.tictactoe.MainApplication;
-import gr.ihu.tictactoe.SceneChange;
 import gr.ihu.tictactoe.ScenesSet;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -16,6 +15,8 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -25,9 +26,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import java.awt.Desktop;
 
 public class menuController implements Initializable{
-
     @FXML
     private AnchorPane main_menu;
     @FXML
@@ -66,7 +67,11 @@ public class menuController implements Initializable{
         stage = (Stage) main_menu.getScene().getWindow();
         stage.setIconified(true);
     }
-
+    @FXML
+    void openLink(ActionEvent event) throws URISyntaxException, IOException{
+        Desktop.getDesktop().browse(new URI("www.google.com"));
+    }
+    
     @FXML
     private void closeWindow(MouseEvent event) {
         System.exit(0);
@@ -94,6 +99,7 @@ public class menuController implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle rb){
         Parent root;
+        
         try {
             root = FXMLLoader.load(MainApplication.class.getResource("fxml/Game_view.fxml"));
             Scene scene = new ScenesSet(root, 796, 441);
@@ -101,19 +107,26 @@ public class menuController implements Initializable{
         } catch (IOException ex) {
             Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        onClickHyper(link1,"www.thankarezos.com");
         
         
     }
-//    public void onClickHyper(){
-//    Hyperlink link = new Hyperlink();
-//    link.setText("http://example.com");
-//    link.setOnAction(new EventHandler<ActionEvent>() {
-//        //Hyperlink()
-//        @Override
-//        public void handle(ActionEvent e) {
-//            System.out.println("This link is clicked");
-//        }
-//    })};
+    public void onClickHyper(Hyperlink link,String linkS){
+        link.setOnAction(new EventHandler<ActionEvent>() {
+            //Hyperlink()
+            @Override
+            public void handle(ActionEvent e) {
+                System.out.println("This link is clicked");
+                try {
+                    Desktop.getDesktop().browse(new URI(linkS));
+                } catch (IOException ex) {
+                    Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+       });
+    }
 
 
 }
