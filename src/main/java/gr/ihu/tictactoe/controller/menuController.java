@@ -107,7 +107,7 @@ public class menuController implements Initializable{
         } catch (IOException ex) {
             Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        onClickHyper(link1,"www.thankarezos.com");
+        onClickHyper(link1,"https://www.thankarezos.com");
         
         
     }
