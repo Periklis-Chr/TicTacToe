@@ -68,11 +68,7 @@ FontAwesomeIconView:hover {
 
 .btns-game:hover {
     -fx-background-color: #232375;
-    -fx-text-fill: #9B111E;
-}
-
-.textArea {
-    -fx-background-color: #50509e;
+    -fx-text-fill: #dad4d4;
 }
 
 .gridPane {
@@ -98,8 +94,7 @@ FontAwesomeIconView:hover {
     -fx-background-size: 796px 547px;
 }
 .labelColor{
-    -fx-background-color: #50509e
-;
+    -fx-background-color: #50509e;
 }
 .textAreaColor{
     -fx-control-inner-background : #50509e;

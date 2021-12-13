@@ -63,22 +63,22 @@
         </AnchorPane>
         <AnchorPane layoutX="444.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="580.0" style="-fx-background-color: #252679;">
             <children>
-                <TextField fx:id="UserNameTextField" layoutX="166.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" promptText="Username/Email" styleClass="textField">
+                <TextField fx:id="UserNameTextField" layoutX="120.0" layoutY="155.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="343.0" promptText="Username/Email" styleClass="textField">
                     <cursor>
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </TextField>
-                <PasswordField fx:id="PasswordField" layoutX="167.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" promptText="Password" styleClass="textField" stylesheets="@../css/main.css">
+                <PasswordField fx:id="PasswordField" layoutX="121.0" layoutY="244.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="343.0" promptText="Password" styleClass="textField" stylesheets="@../css/main.css">
                     <cursor>
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </PasswordField>
                 <Label alignment="CENTER" contentDisplay="CENTER" layoutX="207.0" layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="166.0" text="Sign In" textFill="WHITE">
                     <font>
-                        <Font name="Arial" size="30.0" />
+                        <Font name="Arial Bold" size="30.0" />
                     </font>
                 </Label>
-                <Button fx:id="SignInButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SignInButtonOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign In " textFill="WHITE">
+                <Button fx:id="SignInButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="342.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SignInButtonOnAction" prefHeight="35.0" prefWidth="166.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign In " textFill="WHITE">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
@@ -86,7 +86,7 @@
                         <Cursor fx:constant="HAND" />
                     </cursor>
                 </Button>
-                <Button fx:id="SignUpButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SignUpButtonOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign Up" textFill="WHITE">
+                <Button fx:id="SignUpButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="342.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SignUpButtonOnAction" prefHeight="35.0" prefWidth="166.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign Up" textFill="WHITE">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
@@ -99,7 +99,7 @@
                         <Font size="20.0" />
                     </font>
                 </Label>
-            <Button id="btnClose" fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="399.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickClose" prefHeight="35.0" prefWidth="250.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Close" textFill="WHITE">
+            <Button id="btnClose" fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickClose" prefHeight="35.0" prefWidth="343.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Close" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -107,6 +107,16 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Label layoutX="120.0" layoutY="128.0" prefHeight="26.0" prefWidth="147.0" text="Username/Email" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="120.0" layoutY="218.0" prefHeight="26.0" prefWidth="147.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
             </children>
         </AnchorPane>
     </children>

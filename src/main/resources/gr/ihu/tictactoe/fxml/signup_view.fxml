@@ -64,7 +64,7 @@
         </AnchorPane>
         <AnchorPane layoutX="377.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="647.0" style="-fx-background-color: #252679;">
             <children>
-                <Button fx:id="RegisterButton" alignment="CENTER" contentDisplay="CENTER" layoutX="342.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RegisterButtonOnAction" prefHeight="35.0" prefWidth="250.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Register" textFill="WHITE">
+                <Button fx:id="RegisterButton" alignment="CENTER" contentDisplay="CENTER" layoutX="342.0" layoutY="435.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RegisterButtonOnAction" prefHeight="35.0" prefWidth="250.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Register" textFill="WHITE">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
@@ -72,12 +72,12 @@
                         <Cursor fx:constant="HAND" />
                     </cursor>
                 </Button>
-                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="446.0" text="User Registation" textFill="WHITE">
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="446.0" text="User Registation" textFill="WHITE">
                     <font>
-                        <Font name="Arial" size="30.0" />
+                        <Font name="Arial Bold" size="30.0" />
                     </font>
                 </Label>
-                <TextField fx:id="setFirstName" layoutX="55.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#clearbox" prefHeight="35.0" prefWidth="250.0" promptText="First Name" style="-fx-background-color: white;">
+                <TextField fx:id="setFirstName" layoutX="55.0" layoutY="123.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#clearbox" prefHeight="35.0" prefWidth="250.0" promptText="First Name" styleClass="textField" stylesheets="@../css/main.css">
                     <padding>
                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                     </padding>
@@ -88,7 +88,7 @@
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </TextField>
-                <TextField fx:id="setLastName" layoutX="342.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" style="-fx-background-color: white;">
+                <TextField fx:id="setLastName" layoutX="342.0" layoutY="123.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" styleClass="textField" stylesheets="@../css/main.css">
                     <padding>
                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                     </padding>
@@ -99,7 +99,7 @@
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </TextField>
-                <TextField fx:id="setEmail" layoutX="55.0" layoutY="198.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Email" style="-fx-background-color: white;">
+                <TextField fx:id="setEmail" layoutX="55.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Email" styleClass="textField" stylesheets="@../css/main.css">
                     <padding>
                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                     </padding>
@@ -110,7 +110,7 @@
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </TextField>
-                <TextField fx:id="setUserName" layoutX="55.0" layoutY="263.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="User Name" style="-fx-background-color: white;">
+                <TextField fx:id="setUserName" layoutX="55.0" layoutY="249.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="User Name" styleClass="textField" stylesheets="@../css/main.css">
                     <padding>
                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                     </padding>
@@ -121,7 +121,7 @@
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </TextField>
-                <PasswordField fx:id="setPassword" layoutX="55.0" layoutY="328.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Password" style="-fx-background-color: white;">
+                <PasswordField fx:id="setPassword" layoutX="55.0" layoutY="314.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Password" styleClass="textField" stylesheets="@../css/main.css">
                     <padding>
                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                     </padding>
@@ -132,7 +132,7 @@
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </PasswordField>
-                <PasswordField fx:id="setConfirmPassword" layoutX="54.0" layoutY="393.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Confirm Password" style="-fx-background-color: white;">
+                <PasswordField fx:id="setConfirmPassword" layoutX="54.0" layoutY="379.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearbox" prefHeight="35.0" prefWidth="538.0" promptText="Confirm Password" styleClass="textField" stylesheets="@../css/main.css">
                     <padding>
                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                     </padding>
@@ -143,7 +143,7 @@
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </PasswordField>
-                <Label layoutX="55.0" layoutY="107.0" prefHeight="30.0" prefWidth="95.0" text="First Name" textFill="WHITE">
+                <Label layoutX="55.0" layoutY="93.0" prefHeight="30.0" prefWidth="95.0" text="First Name" textFill="WHITE">
                     <font>
                         <Font size="17.0" />
                     </font>
@@ -157,7 +157,7 @@
                         <Cursor fx:constant="WAIT" />
                     </cursor>
                 </Label>
-                <Label layoutX="55.0" layoutY="298.0" prefHeight="30.0" prefWidth="95.0" text="Password" textFill="WHITE">
+                <Label layoutX="55.0" layoutY="284.0" prefHeight="30.0" prefWidth="95.0" text="Password" textFill="WHITE">
                     <font>
                         <Font size="17.0" />
                     </font>
@@ -171,7 +171,7 @@
                         <Cursor fx:constant="WAIT" />
                     </cursor>
                 </Label>
-                <Label layoutX="54.0" layoutY="233.0" prefHeight="30.0" prefWidth="95.0" text="User Name" textFill="WHITE">
+                <Label layoutX="54.0" layoutY="219.0" prefHeight="30.0" prefWidth="95.0" text="User Name" textFill="WHITE">
                     <font>
                         <Font size="17.0" />
                     </font>
@@ -185,7 +185,7 @@
                         <Cursor fx:constant="WAIT" />
                     </cursor>
                 </Label>
-                <Label layoutX="55.0" layoutY="172.0" prefHeight="30.0" prefWidth="95.0" text="Email" textFill="WHITE">
+                <Label layoutX="55.0" layoutY="158.0" prefHeight="30.0" prefWidth="95.0" text="Email" textFill="WHITE">
                     <font>
                         <Font size="17.0" />
                     </font>
@@ -199,7 +199,7 @@
                         <Cursor fx:constant="WAIT" />
                     </cursor>
                 </Label>
-                <Label layoutX="342.0" layoutY="107.0" prefHeight="30.0" prefWidth="95.0" text="Last Name" textFill="WHITE">
+                <Label layoutX="342.0" layoutY="93.0" prefHeight="30.0" prefWidth="95.0" text="Last Name" textFill="WHITE">
                     <font>
                         <Font size="17.0" />
                     </font>
@@ -213,7 +213,7 @@
                         <Cursor fx:constant="WAIT" />
                     </cursor>
                 </Label>
-                <Label layoutX="55.0" layoutY="363.0" prefHeight="30.0" prefWidth="153.0" text="Confirm Password" textFill="WHITE">
+                <Label layoutX="55.0" layoutY="349.0" prefHeight="30.0" prefWidth="153.0" text="Confirm Password" textFill="WHITE">
                     <font>
                         <Font size="17.0" />
                     </font>
@@ -227,12 +227,20 @@
                         <Cursor fx:constant="WAIT" />
                     </cursor>
                 </Label>
-                <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="580.0" textFill="RED">
+                <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="53.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="580.0" textFill="RED">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-            <Button fx:id="regibtn" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="250.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Back" textFill="WHITE">
+            <Button fx:id="BackButton" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="435.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="250.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="CloseButton" fx:id="CloseButton" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="489.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickClose" prefHeight="35.0" prefWidth="538.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Close" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>

@@ -33,8 +33,6 @@ public class GameController implements Initializable {
     @FXML
     private AnchorPane anchorPane2;
     @FXML
-    private HBox Hbox2;
-    @FXML
     private Text XScore;
     @FXML
     private Text OScore;
@@ -52,15 +50,6 @@ public class GameController implements Initializable {
     private void closeWindow(MouseEvent event) {
         System.exit(0);
         Platform.exit();
-    }
-
-    private void boxonclick(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-
-    private void boxAction() {
-
     }
 
     @Override

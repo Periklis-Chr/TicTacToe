@@ -1,6 +1,7 @@
 package gr.ihu.tictactoe.controller;
 
 import gr.ihu.tictactoe.DataBaseConnection;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import javafx.stage.Stage;
@@ -30,7 +31,9 @@ public class SignUpController {
     @FXML
     private Button RegisterButton;
     @FXML
-    private Button regibtn;
+    private Button BackButton;
+    @FXML
+    private Button CloseButton;
     @FXML
     private TextField setFirstName;
     @FXML
@@ -60,6 +63,12 @@ public class SignUpController {
 
     @FXML
     private void closeWindow(MouseEvent event) {
+        System.exit(0);
+        Platform.exit();
+    }
+
+    @FXML
+    private void onClickClose(ActionEvent event) {
         System.exit(0);
         Platform.exit();
     }
