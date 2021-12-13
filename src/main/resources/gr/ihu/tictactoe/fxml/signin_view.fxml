@@ -7,7 +7,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -64,12 +63,12 @@
         </AnchorPane>
         <AnchorPane layoutX="444.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="580.0" style="-fx-background-color: #252679;">
             <children>
-                <TextField fx:id="UserNameTextField" layoutX="166.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" promptText="Username/Email" style="-fx-background-color: white;">
+                <TextField fx:id="UserNameTextField" layoutX="166.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" promptText="Username/Email" styleClass="textField">
                     <cursor>
                         <Cursor fx:constant="TEXT" />
                     </cursor>
                 </TextField>
-                <PasswordField fx:id="PasswordField" layoutX="167.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" promptText="Password" style="-fx-background-color: white;">
+                <PasswordField fx:id="PasswordField" layoutX="167.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" promptText="Password" styleClass="textField" stylesheets="@../css/main.css">
                     <cursor>
                         <Cursor fx:constant="TEXT" />
                     </cursor>
@@ -87,22 +86,27 @@
                         <Cursor fx:constant="HAND" />
                     </cursor>
                 </Button>
-                <Button fx:id="SignUpButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="303.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SignUpButtonOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign Up" textFill="WHITE">
+                <Button fx:id="SignUpButtonOnAction" alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SignUpButtonOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Sign Up" textFill="WHITE">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor>
-                    <effect>
-                        <Glow level="0.36" />
-                    </effect>
                 </Button>
                 <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="292.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="580.0" textFill="RED">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Label>
+            <Button id="btnClose" fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="399.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickClose" prefHeight="35.0" prefWidth="250.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Close" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
             </children>
         </AnchorPane>
     </children>

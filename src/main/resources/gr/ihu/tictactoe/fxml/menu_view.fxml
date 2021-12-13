@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="main_menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.menuController">
+<AnchorPane id="AnchorPane" fx:id="main_menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1024.0" styleClass="parent" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.ihu.tictactoe.controller.menuController">
     <children>
         <HBox id="Hbox" fx:id="Hbox" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="1024.0">
             <padding>
@@ -62,37 +62,45 @@
                                 </ImageView>
                             </children>
                         </Pane>
-                        <Button fx:id="btnMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Main Menu" VBox.vgrow="ALWAYS" />
-                        <Button fx:id="btnGame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Play the Game" />
-                        <Button fx:id="btnDevelopers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" text="Developers" />
-                        <Button fx:id="btnInformation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" text="Information" />
+                        <Button fx:id="btnMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Main Menu" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin></Button>
+                        <Button fx:id="btnGame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Play the Game">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin></Button>
+                        <Button fx:id="btnDevelopers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" text="Developers">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin></Button>
+                        <Button fx:id="btnInformation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" text="Information">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin></Button>
+                  <Button id="btnLogout" fx:id="btnLogout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickLogout" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" text="Logout">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button id="btnClose" fx:id="btnClose" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickClose" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" text="Close">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
                     </children>
                 </VBox>
                 <StackPane layoutX="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0">
                     <children>
-                        <GridPane fx:id="mainMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane">
+                        <GridPane id="gamePane" fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane" stylesheets="@../css/main.css">
                             <columnConstraints>
                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             </columnConstraints>
                             <rowConstraints>
-                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="547.0" minHeight="0.0" prefHeight="122.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="116.0" prefWidth="796.0" styleClass="gridPane">
-                                    <children>
-                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="124.0" prefWidth="796.0" text="The Tic Tac Toe Rules" textFill="WHITE">
-                                            <font>
-                                                <Font name="Arial" size="20.0" />
-                                            </font>
-                                        </Label>
-                                    </children>
-                                </Pane>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gridPane" GridPane.rowIndex="1">
-                                    <children>
-                                        <TextArea accessibleRole="BUTTON" editable="false" layoutX="93.0" layoutY="121.0" pickOnBounds="false" prefHeight="185.0" prefWidth="625.0" text="&#9;&#10;1. The game is played on a grid that's 3 squares by 3 squares.&#10;&#10;2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.&#10;&#10;3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.&#10;&#10;4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie." />
-                                    </children>
-                                </Pane>
+                                <Pane fx:id="gamePlayTheGamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="gridPane" stylesheets="@../css/main.css" />
                             </children>
                         </GridPane>
                         <GridPane fx:id="informationPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane">
@@ -106,16 +114,19 @@
                             <children>
                                 <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" styleClass="gridPane">
                                     <children>
-                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="124.0" prefWidth="796.0" stylesheets="@../css/main.css" text="The Tic Tac Toe Game Story" textFill="WHITE">
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="772.0" styleClass="labelColor" stylesheets="@../css/main.css" text="The Tic Tac Toe Game Story" textFill="WHITE">
                                             <font>
-                                                <Font name="Arial" size="20.0" />
+                                                <Font name="Arial Bold" size="24.0" />
                                             </font>
                                         </Label>
                                     </children>
                                 </Pane>
                                 <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gridPane" GridPane.rowIndex="1">
                                     <children>
-                                        <TextArea accessibleRole="BUTTON" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pickOnBounds="false" prefHeight="406.0" prefWidth="796.0" text="Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os (Irish English) is a paper-and-pencil game for &#10;two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in&#10; a horizontal, vertical, or diagonal row is the winner. It is a solved game, with a forced draw assuming best play from both players.&#10;&#10;Gameplay&#10;Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid.&#10;&#10;There is no universally-agreed rule as to who plays first, but in this article the convention that X plays first is used.&#10;&#10;Players soon discover that the best play from both parties leads to a draw. Hence, tic-tac-toe is often played by young children who may not&#10;have discovered the optimal strategy.&#10;&#10;Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the &#10;branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to &#10;play tic-tac-toe perfectly or to enumerate the 765 essentially different positions (the state space complexity) or the 26,830 possible games &#10;up to rotations and reflections (the game tree complexity) on this space. If played optimally by both players, &#10;the game always ends in a draw, making tic-tac-toe a futile game.&#10;&#10;&#10;Incidence structure for tic-tac-toe&#10;The game can be generalized to an m,n,k-game, in which two players alternate placing stones of their own color on an m-by-n &#10;board with the goal of getting k of their own color in a row. Tic-tac-toe is the 3,3,3-game. Harary's generalized tic-tac-toe is an even&#10;broader generalization of tic-tac-toe. It can also be generalized as an nd game, specifically one in which n equals 3 and d equals 2.&#10;It can be generalised even further by playing on an arbitrary incidence structure, where rows are lines and cells are points. &#10;Tic-tac-toe's incidence structure consists of nine points, three horizontal lines, three vertical lines, and two diagonal lines,&#10; with each line consisting of at least three points.&#10;&#10;History&#10;Games played on three-in-a-row boards can be traced back to ancient Egypt,&#10;where such game boards have been found on roofing tiles dating from around 1300 BC.&#10;&#10;An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three pebbles at a time)&#10;and instead of having any number of pieces, each player had only three; thus, they had to move them around to empty spaces to keep playing.&#10;The game's grid markings have been found chalked all over Rome. Another closely related ancient game is three men's morris which is also &#10;played on a simple grid and requires three pieces in a row to finish, and Picaria, a game of the Puebloans.&#10;&#10;The different names of the game are more recent.&#10;The first print reference to &quot;noughts and crosses&quot; (nought being an alternative word for 'zero'),&#10; the British name, appeared in 1858, in an issue of Notes and Queries.The first print reference to a game called &quot;tick-tack-toe&quot; &#10;occurred in 1884, but referred to &quot;a children's game played on a slate, consisting of trying with the eyes shut to bring the pencil &#10;down on one of the numbers of a set, the number hit being scored&quot;.[This quote needs a citation] &quot;Tic-tac-toe&quot; may also derive from &#10;&quot;tick-tack&quot;, the name of an old version of backgammon first described in 1558. The US renaming of &quot;noughts and crosses&quot; to &quot;tic-tac-toe&quot; &#10;occurred in the 20th century.&#10;&#10;In 1952, OXO (or Noughts and Crosses), developed by British computer scientist Sandy Douglas for the EDSAC computer at the &#10;University of Cambridge, became one of the first known video games. The computer player could play perfect games of tic-tac-toe &#10;against a human opponent.&#10;&#10;In 1975, tic-tac-toe was also used by MIT students to demonstrate the computational power of Tinkertoy elements. The Tinkertoy computer, &#10;made out of (almost) only Tinkertoys, is able to play tic-tac-toe perfectly. It is currently on display at the Museum of Science, Boston." />
+                                        <TextArea accessibleRole="BUTTON" editable="false" layoutX="5.0" layoutY="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pickOnBounds="false" prefHeight="416.0" prefWidth="787.0" styleClass="textAreaColor" text="Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os (Irish English) is a paper-and-pencil &#10;game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing &#10;three of their marks in a horizontal, vertical, or diagonal row is the winner. It is a solved game, with a forced draw assuming best &#10;play from both players.&#10;&#10;Gameplay&#10;Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces &#10;in the grid.&#10;&#10;There is no universally-agreed rule as to who plays first, but in this article the convention that X plays first is used.&#10;&#10;Players soon discover that the best play from both parties leads to a draw. Hence, tic-tac-toe is often played by young children&#10;who may not have discovered the optimal strategy.&#10;&#10;Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and&#10;the branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to &#10;play tic-tac-toe perfectly or to enumerate the 765 essentially different positions (the state space complexity) or the 26,830 possible&#10;games up to rotations and reflections (the game tree complexity) on this space. If played optimally by both players, &#10;the game always ends in a draw, making tic-tac-toe a futile game.&#10;&#10;&#10;Incidence structure for tic-tac-toe&#10;The game can be generalized to an m,n,k-game, in which two players alternate placing stones of their own color on an m-by-n &#10;board with the goal of getting k of their own color in a row. Tic-tac-toe is the 3,3,3-game. Harary's generalized tic-tac-toe is an &#10;even broader generalization of tic-tac-toe. It can also be generalized as an nd game, specifically one in which n equals 3 and&#10;d equals 2. It can be generalised even further by playing on an arbitrary incidence structure, where rows are lines and cells &#10;are points. Tic-tac-toe's incidence structure consists of nine points, three horizontal lines, three vertical lines, and two diagonal &#10;lines, with each line consisting of at least three points.&#10;&#10;History&#10;Games played on three-in-a-row boards can be traced back to ancient Egypt,&#10;where such game boards have been found on roofing tiles dating from around 1300 BC.&#10;&#10;An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three &#10;pebbles at a time) and instead of having any number of pieces, each player had only three; thus, they had to move them around&#10;to empty spaces to keep playing. The game's grid markings have been found chalked all over Rome. Another closely related&#10;ancient game is three men's morris which is also played on a simple grid and requires three pieces in a row to finish, and Picaria,&#10;a game of the Puebloans.&#10;&#10;The different names of the game are more recent.&#10;The first print reference to &quot;noughts and crosses&quot; (nought being an alternative word for 'zero'),&#10; the British name, appeared in 1858, in an issue of Notes and Queries.The first print reference to a game called &quot;tick-tack-toe&quot; &#10;occurred in 1884, but referred to &quot;a children's game played on a slate, consisting of trying with the eyes shut to bring the pencil &#10;down on one of the numbers of a set, the number hit being scored&quot;.[This quote needs a citation] &quot;Tic-tac-toe&quot; may also derive&#10;from &quot;tick-tack&quot;, the name of an old version of backgammon first described in 1558. The US renaming of &quot;noughts and crosses&quot;&#10; to &quot;tic-tac-toe&quot; occurred in the 20th century.&#10;&#10;In 1952, OXO (or Noughts and Crosses), developed by British computer scientist Sandy Douglas for the EDSAC computer at the &#10;University of Cambridge, became one of the first known video games. The computer player could play perfect games of tic-tac-toe &#10;against a human opponent.&#10;&#10;In 1975, tic-tac-toe was also used by MIT students to demonstrate the computational power of Tinkertoy elements. The Tinkertoy &#10;computer, made out of (almost) only Tinkertoys, is able to play tic-tac-toe perfectly. It is currently on display at the Museum of&#10;Science, Boston.">
+                                 <font>
+                                    <Font name="Arial" size="13.0" />
+                                 </font></TextArea>
                                     </children>
                                 </Pane>
                             </children>
@@ -131,15 +142,16 @@
                             <children>
                                 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="796.0" styleClass="gridPane">
                                     <children>
-                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="124.0" prefWidth="796.0" text="Tic Tac Toe Project Developers" textFill="WHITE">
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="772.0" styleClass="labelColor" stylesheets="@../css/main.css" text="Tic Tac Toe Project Developers" textFill="WHITE">
                                             <font>
-                                                <Font name="Arial" size="20.0" />
+                                                <Font name="Arial Bold" size="24.0" />
                                             </font>
                                         </Label>
                                     </children>
                                 </Pane>
                                 <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gridPane" GridPane.rowIndex="1">
                                     <children>
+                              <Pane layoutX="13.0" layoutY="13.0" prefHeight="400.0" prefWidth="770.0" styleClass="labelColor" />
                                         <HBox layoutX="223.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="355.0">
                                             <children>
                                                 <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="175.0" text="    Senior developer" textFill="WHITE">
@@ -186,15 +198,32 @@
                                 </Pane>
                             </children>
                         </GridPane>
-                        <GridPane id="gamePane" fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane" stylesheets="@../css/main.css">
+                        <GridPane fx:id="mainMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="796.0" styleClass="gridPane">
                             <columnConstraints>
                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             </columnConstraints>
                             <rowConstraints>
-                                <RowConstraints maxHeight="547.0" minHeight="0.0" prefHeight="122.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="547.0" minHeight="97.0" prefHeight="426.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Pane fx:id="gamePlayTheGamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="gridPane" stylesheets="@../css/main.css" />
+                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="116.0" prefWidth="796.0" styleClass="gridPane">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="772.0" styleClass="labelColor" stylesheets="@../css/main.css" text="The Tic Tac Toe Rules" textFill="WHITE">
+                                            <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="gridPane" GridPane.rowIndex="1">
+                                    <children>
+                                        <TextArea accessibleRole="BUTTON" editable="false" layoutX="13.0" layoutY="13.0" maxWidth="-Infinity" pickOnBounds="false" prefHeight="400.0" prefWidth="770.0" styleClass="textAreaColor" text="&#9;&#10;1. The game is played on a grid that's 3 squares by 3 squares.&#10;&#10;2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.&#10;&#10;3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.&#10;&#10;4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font></TextArea>
+                                    </children>
+                                </Pane>
                             </children>
                         </GridPane>
                     </children>

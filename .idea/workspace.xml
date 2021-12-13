@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45801cb3-0ac8-43ca-a7b1-55f153e8c04c" name="Changes" comment="menu view">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/menuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/menuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/menu_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/menu_view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/signin_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/signin_view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/signup_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/signup_view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Downloads/fxyz3d-0.5.4.jar" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2724138" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -49,7 +55,6 @@
     <configuration name="MainApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gr.ihu.tictactoe.MainApplication" />
       <module name="TicTacToe" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-17.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gr.ihu.tictactoe.*" />
@@ -78,6 +83,7 @@
       <workItem from="1639001546373" duration="3000" />
       <workItem from="1639001573652" duration="857000" />
       <workItem from="1639002470135" duration="1967000" />
+      <workItem from="1639397891349" duration="4886000" />
     </task>
     <task id="LOCAL-00001" summary="close button and minimized butoon">
       <created>1638690426742</created>

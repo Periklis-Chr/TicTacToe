@@ -64,7 +64,7 @@
         </AnchorPane>
         <AnchorPane layoutX="377.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="647.0" style="-fx-background-color: #252679;">
             <children>
-                <Button fx:id="RegisterButton" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RegisterButtonOnAction" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #364995;" text="Register" textFill="WHITE">
+                <Button fx:id="RegisterButton" alignment="CENTER" contentDisplay="CENTER" layoutX="342.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RegisterButtonOnAction" prefHeight="35.0" prefWidth="250.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Register" textFill="WHITE">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
@@ -232,7 +232,7 @@
                         <Font size="15.0" />
                     </font>
                 </Label>
-            <Button fx:id="regibtn" alignment="CENTER" contentDisplay="CENTER" layoutX="343.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #364995;" text="Back" textFill="WHITE">
+            <Button fx:id="regibtn" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="35.0" prefWidth="250.0" styleClass="signinbtn" stylesheets="@../css/main.css" text="Back" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>

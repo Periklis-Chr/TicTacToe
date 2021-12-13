@@ -1,6 +1,7 @@
 package gr.ihu.tictactoe.controller;
 
 import gr.ihu.tictactoe.MainApplication;
+import gr.ihu.tictactoe.SceneChange;
 import gr.ihu.tictactoe.ScenesSet;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -42,7 +43,10 @@ public class menuController implements Initializable{
     @FXML
     private Button btnInformation;
     @FXML
-    private Button btnPlay;
+    private Button btnLogout;
+    @FXML
+    private Button btnClose;
+
     @FXML
     private GridPane developersPane;
     @FXML
@@ -92,10 +96,17 @@ public class menuController implements Initializable{
     }
 
     @FXML
-    private void onClickPlay(ActionEvent event) throws IOException {
-        
+    private void onClickLogout(ActionEvent event) throws Exception {
+        SceneChange.toLogin();
     }
-    
+
+    @FXML
+    private void onClickClose(ActionEvent event) throws Exception {
+        System.exit(0);
+        Platform.exit();
+    }
+
+
     @Override
     public void initialize(URL url, ResourceBundle rb){
         Parent root;

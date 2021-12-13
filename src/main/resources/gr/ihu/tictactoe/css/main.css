@@ -30,6 +30,21 @@ FontAwesomeIconView:hover {
     -fx-background-color: #171717;
 }
 
+.textField {
+    -fx-background-color: #dfdfdf;
+    -fx-background-radius: 0px;
+    -fx-prompt-text-fill: #ADADAD;
+    -fx-text-fill: #ffffff;
+    /* -fx-border-color :  black;
+    -fx-border-radius : 5; */
+}
+
+.textField:focused {
+    -fx-background-color: #777777;
+    -fx-background-radius: 0px;
+    -fx-prompt-text-fill: #ADADAD;
+}
+
 .btns-navi {
     -fx-background-color: #404089;
     -fx-font-weight: bold;
@@ -40,7 +55,7 @@ FontAwesomeIconView:hover {
 
 .btns-navi:hover {
     -fx-background-color: #232375;
-    -fx-text-fill: #9B111E;
+    -fx-text-fill: #a49f9f;
 }
 
 .btns-game {
@@ -75,9 +90,20 @@ FontAwesomeIconView:hover {
 
 .signinbtn:hover {
     -fx-background-color: #2545c9;
-    -fx-text-fill: #9B111E;
+    -fx-text-fill: #dad4d4;
 }
 
 .gameBackground {
-    -fx-background-image: url("../image/pirate.png");
+    -fx-background-image: url("../image/beach.jpg");
+    -fx-background-size: 796px 547px;
+}
+.labelColor{
+    -fx-background-color: #50509e
+;
+}
+.textAreaColor{
+    -fx-control-inner-background : #50509e;
+    -fx-text-fill: white;
+    -fx-highlight-fill: black;
+    -fx-highlight-text-fill: green;
 }

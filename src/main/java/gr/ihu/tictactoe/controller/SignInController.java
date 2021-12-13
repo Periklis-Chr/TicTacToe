@@ -30,6 +30,8 @@ public class SignInController {
     @FXML
     private Button SignInButtonOnAction;
     @FXML
+    private Button btnClose;
+    @FXML
     private Label messageLabel;
     @FXML
     private TextField UserNameTextField;
@@ -47,6 +49,11 @@ public class SignInController {
 
     @FXML
     private void closeWindow(MouseEvent event) {
+        System.exit(0);
+        Platform.exit();
+    }
+    @FXML
+    private void onClickClose(ActionEvent event) {
         System.exit(0);
         Platform.exit();
     }
