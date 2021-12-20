@@ -143,8 +143,8 @@ public class SignUpController {
         String Username = setUserName.getText();
         String Password = setPassword.getText();
 
-        String insertFields = "insert into user_account (firstname, lastname, email, username, pass) value ('";
-        String insertValues = firstName + "', '" + lastName + "', '" + Email + "', '" + Username + "', '" + Password + "')";
+        String insertFields = "insert into user_account.user_account (firstname, lastname, email, username, pass) value ('";
+        String insertValues = firstName + "', '" + lastName + "', '" + Email + "', '" + Username + "', '" + Password + "');";
         String insertToRegister = insertFields + insertValues;
 
         try {

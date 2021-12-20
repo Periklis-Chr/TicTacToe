@@ -60,10 +60,11 @@ public class SignInController {
 
     public void SignInButtonOnAction(ActionEvent event) throws Exception {
         //SceneChange.toGame();
-        SceneChange.toMenu();
+
         if (UserNameTextField.getText().isBlank() == false && PasswordField.getText().isBlank() == false) {
             messageLabel.setText("You try to login!");
             validateLogin();
+
         } else {
             messageLabel.setText("Please enter your username and password!");
         }
@@ -73,7 +74,7 @@ public class SignInController {
         DataBaseConnection connectNow = new DataBaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String verifyLogin = "select count(1) from user_account where username = '" + UserNameTextField.getText() + "' and pass = '" + PasswordField.getText() + "';";
+        String verifyLogin = "select count(1) from user_account.user_account where username = '" + UserNameTextField.getText() + "' and pass = '" + PasswordField.getText() + "';";
 
         try {
 
@@ -85,6 +86,7 @@ public class SignInController {
                     //game
                     messageLabel.setStyle("-fx-text-fill: green");
                     messageLabel.setText("Congratulations!");
+                    SceneChange.toMenu();
                 } else {
                     messageLabel.setText("Invalid login. Please try again !");
                 }
