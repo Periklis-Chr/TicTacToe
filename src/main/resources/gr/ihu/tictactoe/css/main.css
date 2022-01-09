@@ -34,7 +34,7 @@ FontAwesomeIconView:hover {
     -fx-background-color: #dfdfdf;
     -fx-background-radius: 0px;
     -fx-prompt-text-fill: #ADADAD;
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: black;
     /* -fx-border-color :  black;
     -fx-border-radius : 5; */
 }
