@@ -69,12 +69,15 @@ public class SignInController {
             messageLabel.setText("Please enter your username and password!");
         }
     }
-    boolean bypass= true;
+    boolean bypass= false;
     private void validateLogin() {
         DataBaseConnection connectNow = new DataBaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String verifyLogin = "select count(1) from user_account.user_account where username = '" + UserNameTextField.getText() + "' and pass = '" + PasswordField.getText() + "';";
+        String verifyLogin = "select count(1) from user_account.user_account where "
+                + "username = '" + UserNameTextField.getText() + "' or "
+                + "email = '" + UserNameTextField.getText() + "' and "
+                + "pass = '" + PasswordField.getText() + "';";
 
         try {
 

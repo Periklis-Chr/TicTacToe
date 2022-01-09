@@ -70,7 +70,7 @@ public class SignUpController {
     @FXML
     private void clearbox(MouseEvent event) {
         TextField text = ((TextField) event.getSource());
-        text.setStyle("-fx-border-color: red ;");
+        text.setStyle("-fx-border-color: transparent ;");
         setError("");
 
     }

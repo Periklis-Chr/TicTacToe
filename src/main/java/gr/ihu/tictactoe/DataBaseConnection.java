@@ -12,7 +12,7 @@ public class DataBaseConnection {
     //public Connection databaseLink;
 
     private static String HOST = "127.0.0.1";
-    private static int PORT = 3333;
+    private static int PORT = 3306;
     private static String DB_NAME = "user_account";
     private static String USERNAME = "root";
     private static String PASSWORD = "";
