@@ -11,12 +11,6 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.Parent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-
-import gr.ihu.tictactoe.ScenesSet;
-import gr.ihu.tictactoe.MainApplication;
 import gr.ihu.tictactoe.SceneChange;
 
 import java.sql.Statement;

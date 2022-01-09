@@ -62,7 +62,7 @@
                                 </ImageView>
                             </children>
                         </Pane>
-                        <Button fx:id="btnMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Main Menu" VBox.vgrow="ALWAYS">
+                        <Button fx:id="btnMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicks" prefHeight="51.0" prefWidth="228.0" styleClass="btns-navi" stylesheets="@../css/main.css" text="Main Menu" textOverrun="CLIP" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets top="5.0" />
                      </VBox.margin></Button>

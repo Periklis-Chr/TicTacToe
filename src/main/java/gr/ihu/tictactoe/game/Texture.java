@@ -21,7 +21,6 @@ import javafx.scene.paint.PhongMaterial;
 /**
  * @author User
  */
-//"X", " ", " ", " ", " ", "O"
 public class Texture extends PhongMaterial {
     Image textureSet;
 

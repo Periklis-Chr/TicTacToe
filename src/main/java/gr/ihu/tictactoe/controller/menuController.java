@@ -118,8 +118,10 @@ public class menuController implements Initializable{
         } catch (IOException ex) {
             Logger.getLogger(menuController.class.getName()).log(Level.SEVERE, null, ex);
         }
+
         onClickHyper(link1,"https://www.thankarezos.com");
-        
+        onClickHyper(link2,"https://github.com/Periklis-Chr");
+        onClickHyper(link3,"https://github.com/kyriakidisdimitrios");
         
     }
     public void onClickHyper(Hyperlink link,String linkS){

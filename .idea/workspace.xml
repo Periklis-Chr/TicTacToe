@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="45801cb3-0ac8-43ca-a7b1-55f153e8c04c" name="Changes" comment="game btn hover&#10;sign in View&#10;sign up View">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/DataBaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignInController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/menuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/controller/menuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/BoxQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/BoxQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/ihu/tictactoe/game/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/menu_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gr/ihu/tictactoe/fxml/menu_view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2724138" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Application.MainApplication">
     <configuration name="MainApplication" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -190,10 +193,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="game btn hover&#10;sign in View&#10;sign up View" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TicTacToe$MainApplication.ic" NAME="MainApplication Coverage Results" MODIFIED="1638685038396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/TicTacToe$MainApplication__1_.ic" NAME="MainApplication (1) Coverage Results" MODIFIED="1638683148289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gr.ihu.tictactoe.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TicTacToe$MainApplication__1_.ic" NAME="MainApplication (1) Coverage Results" MODIFIED="1638683148289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/TicTacToe$MainApplication.ic" NAME="MainApplication Coverage Results" MODIFIED="1638685038396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gr.ihu.tictactoe.*</FILTER>
     </SUITE>
   </component>
