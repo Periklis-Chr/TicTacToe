@@ -5,6 +5,7 @@
  */
 package gr.ihu.tictactoe.game;
 
+import gr.ihu.tictactoe.MainApplication;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
@@ -26,7 +27,8 @@ public class Texture extends PhongMaterial {
 
     //    getClass().getResource("fxml/signin_view.fxml")
     Texture(String file) throws FileNotFoundException {
-        textureSet = new Image(new FileInputStream("src/main/resources/gr/ihu/tictactoe/image/" + file));
+        
+        textureSet = new Image(MainApplication.class.getResourceAsStream("image/box.png"));
         Texture.this.setDiffuseMap(this.textureSet);
     }
 

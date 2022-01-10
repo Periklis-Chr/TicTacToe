@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -20,6 +21,7 @@ public class SceneChange {
         Stage.setTitle("TicTacToe!");
         Stage.setScene(scene);
         Stage.show();
+        Stage.getIcons().add(new Image(MainApplication.class.getResourceAsStream("image/tic-tac-toe.png")));
     }
 
     public static void toRegister() throws Exception {
